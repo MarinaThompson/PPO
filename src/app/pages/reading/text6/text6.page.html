@@ -1,0 +1,33 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="reading"></ion-back-button>
+            </ion-buttons>
+            <ion-title>There's no milk</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-slides pager="true" [options]="slideText">
+
+            <ion-slide>
+                <h5>Today Mrs. Jenkins has a problem - she has no milk in the fridge. What to do? How to make cereal without milk for the family? Her husband, Mr. Jenkins, always eats cereal for breakfast. Her daughter, Lisa, likes cereal in the mornings
+                    too. So Mrs. Jenkins decides to cook cereal with water. She puts outmeal into the pan and adds some water to it. She puts sugar into the cereal to make it sweeter. Finally the cereal is ready. How to make it better? Mrs. Jenkins decides
+                    to add some fruit to each plate of cereal. She adds some sweet yellow bananas and red strawberries. Now her special cereal is ready. </h5>
+                <ion-button *ngFor="let sound of soundboardData" ion-item [ngStyle]="{'color': sound.button.color}" (click)="playSound(sound.soundPath)">
+                    {{ sound.button.name }}
+                </ion-button>
+            </ion-slide>
+
+            <ion-slide>
+                <h5>Hoje a Sra. Jenkins tem um problema - ela não tem leite na geladeira. O que fazer? Como fazer cereais sem leite para a família? Seu marido, Sr. Jenkins, sempre come cereais no café da manhã. Sua filha, Lisa, gosta de cereais nas manhãs
+                    também. Então a Sra. Jenkins decide cozinhar cereais com água. Ela coloca aveia na panela e acrescenta um pouco de água nela. Ela coloca açúcar no cereal para torná-lo mais doce. Finalmente o cereal está pronto. Como torná-lo melhor?
+                    A Sra. Jenkins decide adicionar algumas frutas a cada prato de cereal. Ela adiciona algumas bananas amarelas doces e morangos vermelhos. Agora seu cereal está pronto.</h5>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+
+
+
+</ion-app>

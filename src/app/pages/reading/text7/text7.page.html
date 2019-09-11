@@ -1,0 +1,33 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="reading"></ion-back-button>
+            </ion-buttons>
+            <ion-title>School trip</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-slides pager="true" [options]="slideText">
+
+            <ion-slide>
+                <h5>Today my class and I went on a school trip. We went to the History Museum and saw many interesting things there. We saw skeletons of dinosaurs, skulls of prehistoric humans and their weapons. We also saw warriors from the Middle Ages.
+                    I could even hold a real sword in my hands. It was very heavy! We came out of the museum and saw a big beautiful garden. There were a lot of different trees and flowers. There were oaks, birches and sycamores. And there were a wide
+                    range of flowers: roses, peonies, liles. And there were butterflies of various colors. Butterflies sat on the flowers or flew in the air around us. It was a really good day!</h5>
+                <ion-button *ngFor="let sound of soundboardData" ion-item [ngStyle]="{'color': sound.button.color}" (click)="playSound(sound.soundPath)">
+                    {{ sound.button.name }}
+                </ion-button>
+            </ion-slide>
+
+            <ion-slide>
+                <h5>Hoje minha classe eu fomos em uma viagem de escola. Fomos para o Museu de História e vimos muitas coisas interessantes lá. Vimos esqueletos de dinossauros, crânios de seres humanos pré históricos e suas armas. Nós também vimos guerreiros
+                    da Idade Média. Eu poderia até mesmo segurar uma verdadeira espada em minhas mãos. Era muito pesado! Nós saímos do museu e vimos um grande belo jardim. Havia um monte de árvores e flores diferentes. Havia carvalhos, vidoeiros e sicômoros.
+                    E havia uma grande variedade de flores: rosas, peônias, lírios. E havia borboletas de várias cores. As borboletas sentaram-se nas flores ou voaram no ar em torno de nós. Foi um dia muito bom!</h5>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+
+
+
+</ion-app>

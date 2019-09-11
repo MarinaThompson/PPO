@@ -1,0 +1,49 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+}
+
+ion-title {
+    margin-left: 25%;
+    color: #ffffff;
+}
+
+ion-content {
+    --ion-background-color: #ffffff;
+    h4 {
+        color: #000000;
+        text-align: center;
+    }
+}
+
+ion-card-header {
+    background-color: #ffffff;
+}
+
+.bloco {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10%;
+    background-color: #aa7974;
+}
+
+tbody {
+    tr {
+        td {
+            color: #000000;
+            strong {
+                color: red;
+            }
+        }
+    }
+}
+
+ol {
+    li {
+        color: #000000;
+        strong {
+            color: red;
+        }
+    }
+}

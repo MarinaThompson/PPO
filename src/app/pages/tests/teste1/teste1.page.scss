@@ -1,0 +1,31 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+    text-align: center;
+}
+
+ion-content {
+    ion-card {
+        margin-top: 10%;
+        height: 500px;
+    }
+    h4 {
+        text-align: justify;
+    }
+    ion-button {
+        height: 100px;
+        min-width: 160px;
+        margin-bottom: -20%;
+    }
+    button {
+        position: absolute;
+        width: auto;
+        z-index: 2;
+        left: 20%;
+        top: -5%;
+        height: 55px;
+        justify-content: center;
+        align-items: center;
+        background-color: #aa7974;
+        border-radius: 50px;
+    }
+}

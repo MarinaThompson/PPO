@@ -1,0 +1,49 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+}
+
+.bloco {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10%;
+    background-color: #aa7974;
+}
+
+div.box {
+    width: 80px;
+    display: inline-block;
+}
+
+div.box1 {
+    width: 160px;
+    display: inline-block;
+    height: 100px;
+}
+
+ion-card-header {
+    background-color: #ffffff;
+}
+
+tr {
+    th {
+        text-align: center;
+        text-emphasis: emphas;
+        color: #000000;
+    }
+    td {
+        text-align: center;
+        color: #000000;
+    }
+}
+
+ul {
+    li {
+        color: #000000;
+    }
+}
+
+p {
+    color: black;
+}

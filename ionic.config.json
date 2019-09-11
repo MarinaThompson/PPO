@@ -1,0 +1,7 @@
+{
+  "name": "PPO",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
