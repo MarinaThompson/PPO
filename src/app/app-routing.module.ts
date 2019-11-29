@@ -61,6 +61,15 @@ const routes: Routes = [
   { path: 'things', loadChildren: './pages/topicsVocabulary1/things/things.module#ThingsPageModule' },
   { path: 'adjectives', loadChildren: './pages/topicsVocabulary1/adjectives/adjectives.module#AdjectivesPageModule' },
   { path: 'adjective', loadChildren: './pages/topicsVocabulary1/adjective/adjective.module#AdjectivePageModule' },
+  { path: 'teste-nivelamento', loadChildren: './pages/teste-nivelamento/teste-nivelamento.module#TesteNivelamentoPageModule' },
+  { path: 'testvoc', loadChildren: './pages/tests/testvoc/testvoc.module#TestvocPageModule' },
+  { path: 'test-listening', loadChildren: './pages/tests/test-listening/test-listening.module#TestListeningPageModule' },
+  { path: 'pre-intermediate', loadChildren: './pages/pre-intermediate/pre-intermediate.module#PreIntermediatePageModule' },
+  { path: 'grammar-list', loadChildren: './pages/pre-intermediate/grammar-list/grammar-list.module#GrammarListPageModule' },
+  { path: 'word-order', loadChildren: './pages/pre-intermediate/grammar-list/word-order/word-order.module#WordOrderPageModule' },
+  { path: 'order-word', loadChildren: './pages/pre-intermediate/grammar-list/order-word/order-word.module#OrderWordPageModule' },
+  { path: 'time-sequencers', loadChildren: './pages/pre-intermediate/grammar-list/time-sequencers/time-sequencers.module#TimeSequencersPageModule' },
+  { path: 'relative-clauses', loadChildren: './pages/pre-intermediate/grammar-list/relative-clauses/relative-clauses.module#RelativeClausesPageModule' },
 
 
 ];

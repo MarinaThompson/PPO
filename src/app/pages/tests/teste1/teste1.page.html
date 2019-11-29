@@ -4,65 +4,278 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="testess"></ion-back-button>
             </ion-buttons>
-            <ion-title>Test 1</ion-title>
+            <ion-title>Teste 1</ion-title>
         </ion-toolbar>
     </ion-header>
 
-    <ion-content>
-        <ion-card>
-
-            <ion-grid>
-                <ion-row>
-                    <ion-col size="12" class="img">
-                        <h4>Sei la oq botar nessa merda eu so quero ver como vai ficar quando eu souber o que colocar</h4>
-                    </ion-col>
-
-                </ion-row>
-            </ion-grid>
-
-            <ion-grid>
-                <ion-row>
-                    <ion-col size="6" class="botao">
-                        <ion-button color="primary">Primary</ion-button>
-                    </ion-col>
-                    <ion-col size="6" class="botao">
-                        <ion-button color="primary">Primary</ion-button>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+    <ion-content class="swiper-no-swiping">
 
 
-            <ion-grid>
-                <ion-row>
-                    <ion-col size="4">
-                    </ion-col>
-                    <ion-col size="4" class="botaoMeio">
-                        <button type="button" class="btn btn-light">AAAA</button>
-                    </ion-col>
-                    <ion-col size="4">
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
+        <ion-slides>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
 
-            <ion-grid>
-                <ion-row>
-                    <ion-col size="6" class="botao">
-                        <ion-button color="primary">Primary</ion-button>
-                    </ion-col>
-                    <ion-col size="6" class="botao">
-                        <ion-button color="primary">Primary</ion-button>
-                    </ion-col>
-                </ion-row>
-            </ion-grid>
-        </ion-card>
+                    <h5>My sister is ________ her favorite book. (Present continuous)</h5>
 
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">reads</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">read</ion-button>
+                            </ion-col>
+                        </ion-row>
 
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">reading</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">readed</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
 
+            <ion-slide>
+                <div class="slide-inner ion-padding">
 
+                    <h5>My brother ________ a film yesterday. (Past simple)</h5>
 
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">whatched</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">watches</ion-button>
+                            </ion-col>
+                        </ion-row>
 
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">watching</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">watch</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
 
+            <ion-slide>
+                <div class="slide-inner ion-padding">
 
+                    <h5>I _______ to the gym everyday. (Present simple)</h5>
 
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">goes</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">going</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">go</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">went</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>We _______ any money. (Past simple)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">did have</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">didn't has</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">didn't have</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">did has</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>He _______ in Fiji in 1976. (Past simple)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">lived</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">lives</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">living</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">live</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>I always _______ the newspaper in the morning.(Present Simple)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">reads</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">reading</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">read</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">readed</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>She is American, but she's _______ in Canada at present. (Present Continuous)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">lives</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">live</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">lived</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">living</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>I _______ in Japan last year. (Past simple)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">was</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">were</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">been</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">weren't</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>Are they _______ at the moment? (Present continuous)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">study</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">studying</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">studied</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">studies</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>We generally _______ to Brazil in December. (Present simple)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">travelling</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">traveled</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">travel</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">travels</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+        </ion-slides>
     </ion-content>
 </ion-app>

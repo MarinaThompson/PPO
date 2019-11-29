@@ -1,0 +1,16 @@
+        ion-toolbar {
+            --ion-background-color: #aa7974;
+            text-align: center;
+        }
+        
+        ion-content {
+            ion-button {
+                height: 100px;
+                min-width: 150px;
+            }
+            button {
+                background-color: #aa7974;
+                color: white;
+                margin-left: 43%;
+            }
+        }

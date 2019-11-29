@@ -1,0 +1,241 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="testess"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Teste vocabulário</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="swiper-no-swiping">
+
+
+        <ion-slides>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/activities/watchTV.png">
+                    <h6>What is this boy doing?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">watching Tv</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">reading a book</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">having a <br> breakfast</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">doing his <br> homework</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/things/wallet1.jpg">
+                    <h6>What is it?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">umbrella</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">stamp</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">scissors</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">wallet</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/things/umbrella.jpg">
+                    <h6>What is it?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">pencil</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">umbrella</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">watch</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">photo</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>Which days are part of the weekend?</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Wednesday and Tuesday</ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Saturday and Sunday</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Friday and Saturday</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="presentAlert()">Sunday and Monday</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/job/dentist.jpg">
+                    <h6>What is the man's profession in the picture?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">doctor</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="presentAlert()">dentist</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">lawyer</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">manager</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/job/hairdresser.jpg">
+                    <h6>What is the woman's profession in the picture?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">musician</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">model</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="presentAlert()">hairdresser</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">nurse</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/activities/shower.jpg">
+                    <h6>What is this girl doing?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">getting <br> dressed</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">taking <br> a shower</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">having <br> breakfast</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">doing the <br> housework</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/activities/coffee.jpg">
+                    <h6>What is this girl doing?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="presentAlert()">having a coffee</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">watching tv</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">doing exercise</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">waking up</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+</ion-app>

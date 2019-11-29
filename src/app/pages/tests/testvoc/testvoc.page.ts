@@ -3,21 +3,21 @@ import { IonSlides, ToastController } from '@ionic/angular';
 import { User } from '../../../interfaces/user';
 import { AlertController, ActionSheetController } from '@ionic/angular';
 
-
 @Component({
-  selector: 'app-teste1',
-  templateUrl: './teste1.page.html',
-  styleUrls: ['./teste1.page.scss'],
+  selector: 'app-testvoc',
+  templateUrl: './testvoc.page.html',
+  styleUrls: ['./testvoc.page.scss'],
 })
-export class Teste1Page {
-  @ViewChild(IonSlides) slides: IonSlides;
+export class TestvocPage implements OnInit {
 
+  @ViewChild(IonSlides) slides: IonSlides;
 
   constructor(
     private toastCtrl: ToastController,
     private alertController: AlertController,
     private actionSheet: ActionSheetController
   ) { }
+
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -56,6 +56,7 @@ export class Teste1Page {
   }
 
 
-
+  ngOnInit() {
+  }
 
 }

@@ -28,8 +28,16 @@
                 </div>
             </ion-slide>
         </ion-slides>
+
     </ion-card>
 
     <footer>
+        <ion-list>
+            <ion-item *ngFor="let track of playlist" (click)="start(track)">
+                <ion-label>
+                    {{ track.name }}
+                </ion-label>
+            </ion-item>
+        </ion-list>
     </footer>
 </ion-content>

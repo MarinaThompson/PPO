@@ -13,12 +13,16 @@ import { environment } from 'src/environments/environment.prod';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 
 import { Media, MediaObject } from '@ionic-native/media/ngx';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     IonicModule.forRoot(),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -29,6 +33,7 @@ import { Media, MediaObject } from '@ionic-native/media/ngx';
     StatusBar,
     SplashScreen,
     Media,
+
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
 
 
