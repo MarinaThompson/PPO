@@ -1,0 +1,68 @@
+<ion-app>
+
+    <ion-header>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-menu-button autoHide="false"></ion-menu-button>
+            </ion-buttons>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-menu contentId="content1" side="start">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Menu</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <a href="beginner" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="false">Beginner level</a>
+            <a href="pre-intermediate" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="false">Pre-intermediate level</a>
+            <a href="intermediate" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="false">Intermediate level</a>
+            <a href="upper-intermediate" class="btn btn-primary btn-lg btn-block" role="button" aria-disabled="false">Upper-intermediate level</a>
+        </ion-content>
+
+        <ion-footer>
+            <ion-button (click)="logout()" color="primary" expand="block">
+                Logout
+            </ion-button>
+        </ion-footer>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+
+    <ion-content class="background">
+
+        <div class="top">
+            <h4>Upper-intermediate</h4>
+            <h4>Level</h4>
+
+        </div>
+
+        <div class="button">
+            <ion-button href="grammar-list" color="light">
+                <div class="icon">
+                    <ion-icon name="albums" size="large"></ion-icon> <br> Grammar IV
+                </div>
+            </ion-button>
+            <ion-button href="vocabulary-list" color="light">
+                <div class="icon">
+                    <ion-icon name="logo-vimeo" size="large"></ion-icon> <br> Vocabulary IV
+                </div>
+            </ion-button>
+            <ion-button href="reading-list" color="light">
+                <div class="icon">
+                    <ion-icon name="paper" size="large"></ion-icon> <br> Reading IV
+                </div>
+            </ion-button>
+            <ion-button href="topics-grammar1" color="light">
+                <div class="icon">
+                    <ion-icon name="volume-high" size="large"></ion-icon> <br> Listening IV
+                </div>
+            </ion-button>
+            <ion-button href="testess" color="light">
+                <div class="icon">
+                    <ion-icon name="clipboard" size="large"></ion-icon> <br> Tests IV
+                </div>
+            </ion-button>
+        </div>
+    </ion-content>
+</ion-app>
