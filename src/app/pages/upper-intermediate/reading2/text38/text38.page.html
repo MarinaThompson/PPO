@@ -1,0 +1,29 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="reading1"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Sammy's puppy</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+        <h5>
+            Sandy is a little puppy. She lives in the countryside far of the city, with her owner Sammy. Every day, Sandy plays outside for 5 hours while Sammy is gardening. She loves it. When it rains, she has to stay inside and it makes her sad. She wouldn't mind
+            playing under the pouring rain, but Sammy won't let her do so because otherwise, she gets all wet and dirty. One day, when it was raining heavily, Sandy decides to go anyways. She had a lot of fun. She played in the grass, then in the dirt.
+            It was really nice. When she came back home, Sammy was upset with her. He had to clean her in the bath. Sandy hates taking bath so she suddenly regretted going outside. Next time it's going to rain, she is going to listen to Sammy and she
+            will stay in, even if it's boring. She'd rather be bored than having to take a bath.
+        </h5>
+
+        <ion-button (click)="textToSpeech(text)">Listen</ion-button>
+        <ion-button (click)="textToPause()">Stop</ion-button>
+
+
+
+    </ion-content>
+
+
+
+</ion-app>

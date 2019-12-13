@@ -10,29 +10,56 @@
 
     <ion-content class="swiper-no-swiping">
 
-
         <ion-slides>
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>My sister is ________ her favorite book. (Present continuous)</h5>
-
+                    <h5>My sister is ________ her favorite book.</h5>
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">reads</ion-button>
+                                <ion-button color="primary" (click)="next()">reads</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">read</ion-button>
+                                <ion-button color="primary" (click)="next()">read</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">reading</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">reading</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">readed</ion-button>
+                                <ion-button color="primary" (click)="next()">readed</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+
+
+
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>Harry _______ since last year. </h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">Have been <br> unemployd</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">is unemployded</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">Has been <br> unemployd</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">Has been <br> unemployded</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -42,24 +69,24 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>My brother ________ a film yesterday. (Past simple)</h5>
+                    <h5>I _______ to the gym everyday.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">whatched</ion-button>
+                                <ion-button color="primary" (click)="next()">goes</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">watches</ion-button>
+                                <ion-button color="primary" (click)="next()">going</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">watching</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">go</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">watch</ion-button>
+                                <ion-button color="primary" (click)="next()">went</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -69,51 +96,24 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>My father drives ________ than me.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">goes</ion-button>
+                                <ion-button color="primary" (click)="next()">more fast</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="mudaCor()">going</ion-button>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-                </div>
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-inner ion-padding">
-
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">faster</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="next()">fast</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="next()">more faster</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -122,24 +122,24 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>What ______ you ______ doing at six o'clock last night?</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
+                                <ion-button color="primary" (click)="next()">was / doing</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="next()">were / do</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="next()">was / do</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">were / doing</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -148,24 +148,24 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>Batman Begins _________ Christopher Nolan.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
+                                <ion-button color="primary" (click)="next()">were directed <br> by</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="next()">was direct</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">was directed <br> by</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="next()">were direct</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -174,24 +174,24 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>She is American, but she's _______ in Canada at present.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
+                                <ion-button color="primary" (click)="next()">lives</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="next()">live</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="next()">lived</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">living</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -200,24 +200,52 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>I _______ in Japan last year.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">was</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="next()">were</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="next()">been</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="next()">weren't</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+
+
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>Are they _______ at the moment?</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">study</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">studying</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">studied</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="next()">studies</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -226,201 +254,52 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h5>We generally _______ to Brazil in December.</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
+                                <ion-button color="primary" (click)="next()">travelling</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
+                                <ion-button color="primary" (click)="next()">traveled</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="next()">travel</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
+                                <ion-button color="primary" (click)="next()">travels</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
                 </div>
             </ion-slide>
+
             <ion-slide>
                 <div class="slide-inner ion-padding">
+                    <a class="btn btn-primary" role="button" aria-disabled="false" (click)="showResult()">Mostrar por onde eu devo começar</a>
 
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
+                    <h4>Algumas informações sobre o aplicativo:</h4>
+                    <h6>
+                        <ul>
+                            <li>São 4 etapas e cada etapa tem 4 modalidades + os exercicios;</li>
+                            <li>Na modalidade "grammar" tem vários tópicos de gramática do básico ao avançado; </li>
+                            <li>Na modalidade "reading" tem textos com áudio;</li>
+                            <li>Na modalidade "vocabulary" tem tópicos de vocabulários e cada palavra terá áudio;</li>
+                            <li>A modalidade "listening & speaking" servirá para você treinar sua pronúncia; </li>
+                            <li>Cada modalidade terá diversos testes para você poder fixar o conteúdo;</li>
+                            <li>Se você quiser mudar de etapa, é só ir no menu (clica nas três barrinhas no canto superior esquerdo);</li>
+                        </ul>
+                    </h6>
 
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
-                            </ion-col>
-                        </ion-row>
+                    <a href="beginner" class="btn btn-primary" role="button" aria-disabled="false">Let's start!</a>
 
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
                 </div>
             </ion-slide>
-            <ion-slide>
-                <div class="slide-inner ion-padding">
-
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-                </div>
-            </ion-slide>
-            <ion-slide>
-                <div class="slide-inner ion-padding">
-
-                    <h5>I _______ to the gym everyday. (Present simple)</h5>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">goes</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">going</ion-button>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">go</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">went</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-                </div>
-            </ion-slide>
-
 
         </ion-slides>
-
-        <button type="submit" float-right ion-button color="primary" class="btnNext" (click)="next()">Next question</button>
-
-
-
-
     </ion-content>
 </ion-app>
-
-<!--
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="12">
-                                <h5 [innerHTML]="slide.question"></h>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">
-                                    {{slides.button1}}
-                                </ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">
-                                    {{slides.button2}}
-                                </ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary">
-                                    {{slides.button3}}
-                                </ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary">
-                                    {{slides.button4}}
-                                </ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-
-
-                </ion-slide>
-            </ion-slides>
-        
-
--->
-
-<!--      <ion-card>
-
-                    <ion-card-title>
-                        <h5>Question 1:</h5>
-                    </ion-card-title>
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="12" class="img">
-                                <h4>My sister _______ a book (Present Simple).</h4>
-                            </ion-col>
-
-                        </ion-row>
-                    </ion-grid>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6" class="botao">
-                                <ion-button color="primary">read</ion-button>
-                            </ion-col>
-                            <ion-col size="6" class="botao">
-                                <ion-button color="primary">reads</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6" class="botao">
-                                <ion-button color="primary">reading</ion-button>
-                            </ion-col>
-                            <ion-col size="6" class="botao">
-                                <ion-button color="primary">readed</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-                  </ion-card>
-                  -->

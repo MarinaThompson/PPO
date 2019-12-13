@@ -1,0 +1,32 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="reading"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Movies</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-slides pager="true" [options]="slideText">
+
+            <ion-slide>
+                <h5>Do you like movies? What is your favorite movie? I especially like scary movies very much. They are called horror movies. My sister likes comedies or romantic comedies. My mum likes dramas and my dad likes documentaries. A new scary movie
+                    is on this week. There are zombies, blood and many dead men. This is just what we like! My friends and I are going to buy tickets after school. But the cashier in the movie theater refuses to sell us tickets. He says this movie is
+                    too scary for kids and we are not allowed to watch it. Is that fair?</h5>
+                <ion-button (click)="textToSpeech(text)">Listen</ion-button>
+                <ion-button (click)="textToPause()">Stop</ion-button>
+            </ion-slide>
+
+            <ion-slide>
+                <h5>Você gosta de filmes? Qual é o seu filme favorito? Eu gosto especialmente de filmes assustadores. Eles são chamados de filmes de terror. Minha irmã gosta de comédias ou comédias românticas. Minha mãe gosta de dramas e meu pai gosta de
+                    documentários. Um novo filme assustador está nesta semana. Há zumbis, sangue e muitos homens mortos. Isto é justamente o que nós gostamos! Meus amigos e eu vamos comprar ingressos depois da escola. Mas o caixa no cinema se recusa a
+                    vender os ingressos para nós. Ele diz que este filme é muito assustador para crianças e não temos permissão para assisti-lo. Isso é justo?</h5>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+
+
+
+</ion-app>

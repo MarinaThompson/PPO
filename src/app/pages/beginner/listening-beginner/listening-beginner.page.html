@@ -1,0 +1,47 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="beginner"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Speaking and Listening</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide *ngFor="let slide of slides">
+                <div>
+                    <h4 [innerHTML]="slide.titulo"></h4>
+                </div>
+
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+    <ion-button full (click)="getPermission()">Get Permission</ion-button>
+    <ion-button full (click)="startListening()">Start Listening</ion-button>
+    <ion-button full (click)="stopListening()" *ngIf="isIOS()">Stop Listening</ion-button>
+
+    <ion-card>
+        <ion-card-header>This is what I understood...</ion-card-header>
+        <ion-card-content>
+            <ion-list>
+                <ion-item *ngFor="let match of matches">
+                    {{ match }}
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>
+
+<ion-footer>
+    <h6> If you can't pronounce a word, type the word in the space below and then listen</h6>
+
+    <ion-input placeholder="Type anything" [(ngModel)]="textToSay"></ion-input>
+
+    <ion-button (click)="textToSpeech(text)">Listen</ion-button>
+</ion-footer>

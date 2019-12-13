@@ -1,0 +1,31 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="reading"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Relaxing place</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-slides pager="true" [options]="slideText">
+
+            <ion-slide>
+                <h5>There's a small coffee shop that I love visiting nearly every day. It's situated in the city center but surrounded by old buildings that protect it from the city noise. This is the right place for you to relax, think about your life or
+                    just enjoy your routine. I also love this place for its remarkable scent - it's a mixture of coffee aroma and the smell of fresh pastry. Most of all I love having a cup of coffee with muffins. This coffee shop has a large variety of
+                    muffins, and you can choose whatever flavor you want. Today I saw a banana nut muffin in the window. It looked delicious. So I took a cup of cappuccino and asked for a couple of these muffins. I took a sip of coffee and a little bite
+                    of muffin. It seemed that all these gorgeous tastes burst in my mouth. It was a day in my private paradise!</h5>
+                <ion-button (click)="textToSpeech(text)">Listen</ion-button>
+                <ion-button (click)="textToPause()">Stop</ion-button>
+            </ion-slide>
+
+            <ion-slide>
+                <h5>Há uma pequena loja de café que adoro visitar quase todos os dias. Ele está situado no centro da cidade, mas cercado por edifícios antigos que a protegem do barulho da cidade. Este é o lugar certo para você relaxar, pensar sobre sua vida
+                    ou apenas desfrutar da sua rotina. Eu também adoro este lugar pelo seu aroma notável - é uma mistura de aroma de café e o cheiro de pastelaria fresca. Acima de tudo eu adoro tomar uma xícara de café com muffins (bolos). Este café tem
+                    uma grande variedade de muffins, e você pode escolher qualquer sabor que você deseja. Hoje eu vi um muffin de noz e banana na janela. Ele parecia delicioso. Então eu tomei uma xícara de cappuccino e pedi um par destes muffins. Eu tomei
+                    um gole de café e uma pequena mordida do muffin. Parecia que todos esses esplendorosos sabores estouram na minha boca. Foi um dia no meu paraíso privado.</h5>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+</ion-app>

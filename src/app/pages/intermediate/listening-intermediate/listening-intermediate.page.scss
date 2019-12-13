@@ -1,0 +1,23 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+}
+
+ion-title {
+    margin-left: 7%;
+    color: #ffffff;
+}
+
+.check {
+    margin-left: -10%;
+    margin-right: 13%;
+}
+
+ion-slides {
+    --bullet-background: #d80000;
+    --bullet-background-active: #a50101;
+    --bullet-top: 10%;
+}
+
+ion-slide {
+    display: block;
+}

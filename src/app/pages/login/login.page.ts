@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonSlides, LoadingController, ToastController } from '@ionic/angular';
+import { IonSlides, LoadingController, ToastController, AlertController } from '@ionic/angular';
 import { User } from 'src/app/interfaces/user';
 import { AuthService } from 'src/app/services/auth.service';
+import { AngularFirestore } from '@angular/fire/firestore';
 
 
 @Component({
@@ -20,7 +21,9 @@ export class LoginPage implements OnInit {
   constructor(
     private loadingCtrl: LoadingController,
     private toastCtrl: ToastController,
-    private authService: AuthService
+    private authService: AuthService,
+    private alertCtrl: AlertController,
+    private afStore: AngularFirestore
   ) { }
 
   ngOnInit() { }
@@ -44,7 +47,8 @@ export class LoginPage implements OnInit {
     } catch (error) {
       console.error(error);
 
-      this.presentToast(error.message);
+      this.presentAlert("erro!", error.message);
+
     } finally {
       this.loading.dismiss();
     }
@@ -54,11 +58,18 @@ export class LoginPage implements OnInit {
     await this.presentLoading();
 
     try {
-      await this.authService.register(this.userRegister);
+      const nvUsuario = await this.authService.register(this.userRegister);
+
+      const nvUsuarioObject = Object.assign({}, this.userRegister);
+
+      delete nvUsuarioObject.password;
+
+      await this.afStore.collection('Users').doc(nvUsuario.user.uid).set(nvUsuarioObject)
+
     } catch (error) {
       console.error(error);
 
-      this.presentToast(error.message);
+      this.presentAlert("erro!", error.message);
     } finally {
       this.loading.dismiss();
     }
@@ -73,6 +84,16 @@ export class LoginPage implements OnInit {
   async presentToast(message: string) {
     const toast = await this.toastCtrl.create({ message, duration: 2000 });
     toast.present();
+  }
+
+  async presentAlert(header: string, message) {
+    const alert = await this.alertCtrl.create({
+      header: header,
+      message: message,
+      buttons: ['OK']
+    });
+
+    await alert.present();
   }
 
 }

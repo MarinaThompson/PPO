@@ -1,0 +1,144 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="topics-vocabulary1"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Days of the week</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="true" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/monday.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Monday</h4> <br>
+                        <h5>/ˈmʌnˌdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> Let’s meet for lunch on Monday.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="mondayToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/tuesday.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Tuesday</h4> <br>
+                        <h5>/ˈtuzˌdeɪ/ ou /ˈtjuːzdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> I study English on Tuedays.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="tuesdayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/wednesday.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Wednesday</h4> <br>
+                        <h5>/ˈwenzˌdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> We usually do our homework on Wednesday.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="wednesdayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/thursday.png" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Thursday</h4> <br>
+                        <h5>/ˈθɜrzˌdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> She usually works at home on Thursdays.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="thursdayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/friday.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Friday</h4> <br>
+                        <h5>/ˈfraɪdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> They’ll be here on Friday.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="fridayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/saturday.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Saturday</h4> <br>
+                        <h5>/ˈsætərˌdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> She goes to to church on Saturdays.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="saturdayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/days/sunday.png" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Sunday</h4> <br>
+                        <h5>/ˈsʌnˌdeɪ/</h5>
+                        <h6><b>Usage tips:</b><br> She goes to the gym on Sundays.</h6>
+                    </div>
+                    <div>
+                        <ion-button (click)="sundayToSpeech(text)">Listen</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+        </ion-slides>
+    </ion-card>
+
+    <footer>
+    </footer>
+</ion-content>

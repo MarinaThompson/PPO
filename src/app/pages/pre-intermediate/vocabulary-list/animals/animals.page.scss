@@ -1,0 +1,52 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+}
+
+ion-title {
+    margin-left: 25%;
+    color: #ffffff;
+}
+
+ion-content {
+    --ion-background-color: #ffffff;
+}
+
+ion-slides {
+    --bullet-background: #d80000;
+    --bullet-background-active: #a50101;
+    --bullet-top: 10%;
+}
+
+ion-slide {
+    display: block;
+}
+
+ion-footer {
+    height: 50px;
+    background-color: #aa7974;
+}
+
+.slide-img-padding {
+    padding: 20px;
+    height: 350px;
+    width: 250px;
+    margin-left: 15%;
+    margin-bottom: -20%;
+}
+
+ion-card {
+    margin-top: 2%;
+    margin-bottom: 5px;
+}
+
+h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #775350;
+    margin-bottom: 60px;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #775350;
+    margin-bottom: 10px;
+}

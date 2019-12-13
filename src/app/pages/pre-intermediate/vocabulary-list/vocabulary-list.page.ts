@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VocabularyListPage implements OnInit {
 
+
+
   constructor() { }
 
   ngOnInit() {
