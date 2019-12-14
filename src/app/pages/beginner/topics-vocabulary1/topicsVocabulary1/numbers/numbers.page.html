@@ -9,24 +9,61 @@
 
 <ion-content>
 
-    <ion-card>
-        <ion-slides pager="true" [options]="slideOptsOne">
+    <h6><strong>Click the button to listen</strong></h6>
 
-            <ion-slide *ngFor="let slide of slides">
 
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
-                </div>
-                <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
-                </div>
-                <div>
-                    <h4 [innerHTML]="slide.example"></h4>
-                </div>
-            </ion-slide>
-        </ion-slides>
-    </ion-card>
+    <ion-button expand="full" fill="outline" (click)="oneToSpeech(text)">1. One</ion-button>
+    <ion-button expand="full" (click)="twoToSpeech(text)">2. Two</ion-button>
+    <ion-button expand="full" fill="outline" (click)="threeToSpeech(text)">3. Three</ion-button>
+    <ion-button expand="full" (click)="fourToSpeech(text)">4. Four</ion-button>
+    <ion-button expand="full" fill="outline" (click)="fiveToSpeech(text)">5. Five</ion-button>
+    <ion-button expand="full" (click)="sixToSpeech(text)">6. Six</ion-button>
+    <ion-button expand="full" fill="outline" (click)="sevenToSpeech(text)">7. Seven</ion-button>
+    <ion-button expand="full" (click)="eightToSpeech(text)">8. Eight</ion-button>
+    <ion-button expand="full" fill="outline" (click)="nineToSpeech(text)">9. Nine</ion-button>
+    <ion-button expand="full" (click)="tenToSpeech(text)">10. Ten</ion-button>
 
-    <footer>
-    </footer>
+    <ion-button expand="full" fill="outline" (click)="elevenToSpeech(text)">11. Eleven</ion-button>
+    <ion-button expand="full" (click)="twelveToSpeech(text)">12. Twelve</ion-button>
+    <ion-button expand="full" fill="outline" (click)="thirteenToSpeech(text)">13. Thirteen</ion-button>
+    <ion-button expand="full" (click)="fourteenToSpeech(text)">14. Fourteen</ion-button>
+    <ion-button expand="full" fill="outline" (click)="fifteenToSpeech(text)">15. Fifteen</ion-button>
+    <ion-button expand="full" (click)="sixteenToSpeech(text)">16. Sixteen</ion-button>
+    <ion-button expand="full" fill="outline" (click)="seventeenToSpeech(text)">17. Seventeen</ion-button>
+    <ion-button expand="full" (click)="eighteenToSpeech(text)">18. Eighteen</ion-button>
+    <ion-button expand="full" fill="outline" (click)="nineteenToSpeech(text)">19. Nineteen</ion-button>
+
+    <ion-button expand="full" (click)="twentyToSpeech(text)">20. Twenty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="twenty1ToSpeech(text)">21. Twenty-one</ion-button>
+
+    <ion-button expand="full" (click)="thirtyToSpeech(text)">30. Thirty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="thirty1ToSpeech(text)">31. Thirty-one</ion-button>
+
+    <ion-button expand="full" (click)="fortyToSpeech(text)">40. Forty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="forty1ToSpeech(text)">41. Forty-one</ion-button>
+
+    <ion-button expand="full" (click)="fiftyToSpeech(text)">50. Fifty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="fifty1ToSpeech(text)">51. Fifty-one</ion-button>
+
+    <ion-button expand="full" (click)="sixtyToSpeech(text)">60. Sixty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="sixty1ToSpeech(text)">61. Sixty-one</ion-button>
+
+    <ion-button expand="full" (click)="seventyToSpeech(text)">70. Seventy</ion-button>
+    <ion-button expand="full" fill="outline" (click)="seventy1ToSpeech(text)">71. Seventy-one</ion-button>
+
+    <ion-button expand="full" (click)="eightyToSpeech(text)">80. Eighty</ion-button>
+    <ion-button expand="full" fill="outline" (click)="eighty1ToSpeech(text)">81. Eighty-one</ion-button>
+
+    <ion-button expand="full" (click)="ninetyToSpeech(text)">90. Ninety</ion-button>
+    <ion-button expand="full" fill="outline" (click)="ninety1ToSpeech(text)">91. Ninety-one</ion-button>
+
+    <ion-button expand="full" (click)="hundredToSpeech(text)">100. A hundred</ion-button>
+    <ion-button expand="full" fill="outline" (click)="hundred5ToSpeech(text)">105. A hundred and five</ion-button>
+    <ion-button expand="full" (click)="hundred55ToSpeech(text)">500. Five hundred</ion-button>
+    <ion-button expand="full" fill="outline" (click)="hundred6ToSpeech(text)">695. Six hundred and ninety-five</ion-button>
+
+    <ion-button expand="full" (click)="thousandToSpeech(text)">1000. A thousand</ion-button>
+    <ion-button expand="full" fill="outline" (click)="thousand1ToSpeech(text)">1250. One thousand, two hundred <br> and fifty</ion-button>
+
+
 </ion-content>

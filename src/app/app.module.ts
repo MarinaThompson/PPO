@@ -27,6 +27,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { IonicStorageModule } from '@ionic/storage';
+import { LanguagePopoverPageModule } from './pages/language-popover/language-popover.module';
 
 
 
@@ -51,8 +52,8 @@ import { IonicStorageModule } from '@ionic/storage';
         useFactory: HttpFactory,
         deps: [HttpClient]
       }
-    })
-
+    }),
+    LanguagePopoverPageModule
   ],
 
   providers: [

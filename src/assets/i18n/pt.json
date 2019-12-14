@@ -1,0 +1,15 @@
+{
+    "HOME": {
+        "title": "Casa",
+        "greeting": "Hey {{name}}! Bem vindo à academia Ionic!",
+        "withcode": "<br><br>Você é <b>épico</b>!",
+        "btn": "Mostrar alerta"
+    },
+    "ALERT": {
+        "header": "Error",
+        "msg": "Há um problema com a sua operação"
+    },
+    "ADJECTIVES": {
+        "withhcode": "<ol> <li> Quando usamos um adjetivo com um substantivo, o adjetivo vai antes do substantivo: <br> It's a big city <strong> NÃO </strong> <s> It's a city big </s>. </li> <li>Também podemos usar os adjetivos sem substantivo, após o verbo be.</li> <li>Frequentemente usamos very e quite antes dos adjetivos: </li> <ol> <li>He's very tall.</li> <li>He's quite tall.</li> <li>He isn't very tall.</li> </ol> </ol>"
+    }
+}

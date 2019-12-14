@@ -12,22 +12,384 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
+            <ion-slide>
 
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+                <div class="img">
+                    <img src="/assets/img/job/administrator.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>An administrator</h4> <br>
+                    <h5>Is a person whose job involves helping to organize and supervise the way that an organization or institution functions.</h5>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
+                    <ion-button (click)="administratorToSpeech(text)">Listen</ion-button>
                 </div>
-                <div>
-                    <h6 [innerHTML]="slide.fonetica"></h6>
                 </div>
-                <div>
-                    <h4 [innerHTML]="slide.example"></h4>
-                </div>
-
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/architect.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>An architect</h4> <br>
+                    <h5>Is a person who designs buildings.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="architectToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/builder.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A builder</h4> <br>
+                    <h5>Is a person whose job is to build or repair houses and other buildings.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="builderToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/chef.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A chef / a cook</h4> <br>
+                    <h5>A cook in charge of a kitchen, as of a restaurant; head cook</h5>
+                </div>
+                <div>
+                    <ion-button (click)="chefToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/dentist.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A dentist</h4> <br>
+                    <h5>Is a person who is qualified to examine and treat people´s teeth.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="dentistToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/doctor.png" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A doctor</h4> <br>
+                    <h5>Is someone who is qualified in medicine and treats people who are ill.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="doctorToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/engineer.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>An engineer</h4> <br>
+                    <h5>Is a person who uses scientific knowledge to design, construct, and maintain engines and machines or structures such as roads, railways, and bridges.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="engineerToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/factory.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A factory work</h4> <br>
+                    <h5>Is a person who works in a factory.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="factoryToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/flight.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A flight attendant</h4> <br>
+                    <h5>On an aeroplane, the flight attendants are the people whose job is to look after the passengers and serve their meals.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="flightToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/footballer.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A footballer</h4> <br>
+                    <h5>Is a person who plays football, especially as a profession.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="footballerToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/hairdresser.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A hairdresser</h4> <br>
+                    <h5>Is a person who cuts, colours, and arranges people´s hair.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="hairdresserToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/journalist.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A journalist</h4> <br>
+                    <h5>Is a person whose job is to collect news and write about it for newspapers, magazines, television, or radio.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="journalistToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/lawyer.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A lawyer</h4> <br>
+                    <h5>Is a person who is qualified to advise people about the law and represent them in court.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="lawyerToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/manager.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A (bank) manager</h4> <br>
+                    <h5>Is someone who is in charge of a bank, or a particular branch of a bank, and who is involved in making decisions about whether or not to lend money to businesses and individuals.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="bankToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/model.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A model</h4> <br>
+                    <h5>Is a person with a role either to promote, display or advertise commercial products (notably fashion clothing in fashion shows), or to serve as a visual aid for people who are creating works of art or to pose for photography.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="modelToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/musician.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A musician</h4> <br>
+                    <h5>Is a person who plays a musical instrument as their job or hobby.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="musicianToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/nurse.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A nurse</h4> <br>
+                    <h5>Is a person whose job is to care for people who are ill.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="nurseToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/pilot.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A pilot</h4> <br>
+                    <h5>Is a person who is trained to fly an aircraft.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="pilotToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/policemen.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A policeman / a policewoman</h4> <br>
+                    <h5>Is a man who is a member of the police force.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="policemanToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/receptionist.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A receptionist</h4> <br>
+                    <h5>In a hotel, the receptionist is the person whose job is to book rooms for people and answer their questions.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="receptionistToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/shop.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A shop assistant</h4> <br>
+                    <h5>Is a person who works in a shop selling things to customers.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="shopToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/soldier.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A soldier</h4> <br>
+                    <h5>Is a person who works in an army, especially a person who is not an officer.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="soldierToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/teacher.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A teacher</h4> <br>
+                    <h5>Is a person who teaches, usually as a job at a school or similar institution.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="teacherToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/vet.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A vet</h4> <br>
+                    <h5>Is someone who is qualified to treat sick or injured animals.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="vetToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/job/waitress.jpg" alt="">
+                </div>
+
+                <div class="titulo">
+                    <h4>A waiter / a waitress</h4> <br>
+                    <h5>Is a man who works in a restaurant, serving people with food and drink.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="waiterToSpeech(text)">Listen</ion-button>
+                </div>
+                </div>
+            </ion-slide>
+
+
+
+
         </ion-slides>
     </ion-card>
 

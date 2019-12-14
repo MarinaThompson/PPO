@@ -3,6 +3,10 @@
         <ion-toolbar>
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
             </ion-buttons>
         </ion-toolbar>
     </ion-header>
@@ -34,18 +38,8 @@
                     </tbody>
                 </table>
 
-                <ol>
-                    <li>When we use an adjective with a noun, the adjective goes before the noun: <br> It's a big city <strong> NOT </strong>
-                        <s>It's a house big.</s>
-                    </li>
-                    <li>We can also use the adjectives without a noun, after the verb be.</li>
-                    <li>We often use very and quite before adjectives: </li>
-                    <ol type="a">
-                        <li>He's very tall.</li>
-                        <li>He's quite tall.</li>
-                        <li>He isn't very tall.</li>
-                    </ol>
-                </ol>
+                <ion-text color="black" [innerHTML]="'ADJECTIVES.withhcode' | translate"></ion-text>
+
             </ion-card>
         </div>
     </ion-content>

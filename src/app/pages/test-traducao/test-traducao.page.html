@@ -10,6 +10,18 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content padding>
+    <!-- With pipe -->
+    {{ 'HOME.greeting' | translate:params }}
+
+    <!-- With directive -->
+    <ion-text color="secondary" [translate]="'HOME.greeting'" [translateParams]="params"></ion-text>
+
+    <!-- With directive and html -->
+    <ion-text color="secondary" [innerHTML]="'HOME.withcode' | translate"></ion-text>
+
+    <ion-button expand="block" (click)="showAlert()">
+        {{ 'HOME.btn' | translate }}
+    </ion-button>
 
 </ion-content>

@@ -14,7 +14,7 @@ export class LanguageService {
 
   setInitialLanguage() {
     let language = this.translate.getBrowserLang();
-    this.translate.setDefaultLang(language);
+    this.translate.setDefaultLang('en');
 
     this.storage.get(LNG_KEY).then(val => {
       if (val) {
@@ -27,12 +27,12 @@ export class LanguageService {
   getLanguages() {
     return [
       { text: 'English', value: 'en', img: 'assets/img/eua.png' },
-      { text: 'Português', value: 'br', img: 'assets/img/br.png' },
+      { text: 'Português', value: 'pt', img: 'assets/img/br.png' },
     ];
   }
 
   setLanguage(lng) {
-    this.translate.use('en');
+    this.translate.use(lng);
     this.selected = lng;
     this.storage.set(LNG_KEY, lng);
   }
