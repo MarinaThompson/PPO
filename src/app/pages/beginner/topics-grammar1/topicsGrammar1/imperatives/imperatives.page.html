@@ -4,7 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
-            <ion-title>Imperatives</ion-title>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -30,18 +35,7 @@
                     </tbody>
                 </table>
 
-                <ol>
-                    <li>Use imperatives to give orders or instructions.</li>
-                    <ol type="a">
-                        <li>[+] imperatives = verb (infinitive).<br> [-] imperatives = don't + verb (infinitive).</li>
-                        <li>Add please to be polite: Open the door, please.</li>
-                        <li>We often use be + adjectives in imperatives: Be quite, Be careful, etc.</li>
-                        <li>Don't use a pronoun with imperatives: Be quiet.</li>
-
-                    </ol>
-                    <li>Use Let's + verb (infinitive) to make suggestions. <br> Use Let's not + verb (infinitive) to make a negative suggestion: Let's not wait.</li>
-
-                </ol>
+                <ion-text [innerHTML]="'IMPERATIVES.explanation' | translate"></ion-text>
 
             </ion-card>
         </div>

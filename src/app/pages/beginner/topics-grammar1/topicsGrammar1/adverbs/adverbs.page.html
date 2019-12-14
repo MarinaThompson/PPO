@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -12,19 +18,14 @@
 
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Adverbs of manner</ion-card-title>
+                    <ion-text [innerHTML]="'ADVERBS.manner' | translate"></ion-text>
                 </ion-card-header>
 
                 <h6>
                     They drive <strong>dangerously.</strong> <br> He dresses <strong>fashionably.</strong> <br> She eats very <strong>quickly.</strong> <br> I work <strong>hard.</strong> We speal English <strong>well.</strong>
                 </h6>
 
-                <ul>
-                    <li>We use adverbs of manner to say how people do things.</li>
-                    <li>Adverbs usually go after the verb. <br> I speak English <strong>very well</strong>.
-                        <strong>NOT</strong> <s>I speak very well English.</s>
-                    </li>
-                </ul>
+                <ion-text color="black" [innerHTML]="'ADVERBS.manner1' | translate"></ion-text>
 
                 <table class="table table-hover">
                     <thead>
@@ -68,29 +69,18 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>Remember the difference between adjectives and adverbs: <br> I'm a <strong>careful</strong> driver. (careful is an adjective. It describes the noun, driver). <br> I drive <strong>carefully</strong>. (carefully is an adverb. It describes
-                        the verb, drive.)
-                    </li>
-                </ul>
+                <ion-text [innerHTML]="'ADVERBS.manner2' | translate"></ion-text>
 
                 <ion-card-header>
-                    <ion-card-title>Modifying adverbs</ion-card-title>
+                    <ion-text [innerHTML]="'ADVERBS.modifying' | translate"></ion-text>
                 </ion-card-header>
 
                 <h6>It isn't <strong>very</strong> expensive. <br> People are <strong>quite</strong> formal. <br> She drives <strong>incredibly</strong> fast. <br> They speak <strong>really</strong> slowly. </h6>
 
-                <ul>
-                    <li>
-                        We use modifying adverbs with adjectives or other adverbs.
-                    </li>
-                    <li>
-                        They always go before the adjective or adverb.
-                    </li>
-                </ul>
+                <ion-text [innerHTML]="'ADVERBS.modifying2' | translate"></ion-text>
 
                 <div class="alert alert-info" role="alert">
-                    <strong>words ending in -ly</strong> <br> Not all words that end in ly are adverbs, e.g. friendly = adjective. <br> He's a <strong>friendly</strong> person.
+                    <ion-text [innerHTML]="'ADVERBS.alertinfo' | translate"></ion-text>
                 </div>
 
             </ion-card>

@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -51,11 +57,8 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>We use <strong>in</strong> for parts of day and seasons.</li>
-                    <li>We use <strong>on</strong> for days.</li>
-                    <li>We use <strong>at</strong> for times of the day, night, the weekend, and festivals.</li>
-                </ul>
+                <ion-text [innerHTML]="'PREPOSITIONS.explanation' | translate"></ion-text>
+
 
                 <div class="row">
                     <div class="col-sm-12">
@@ -70,7 +73,8 @@
                     </div>
                 </div>
 
-                <h5>Movement and place</h5>
+                <ion-text [innerHTML]="'PREPOSITIONS.explanation1' | translate"></ion-text>
+
                 <table class="table table-hover">
                     <tbody>
                         <tr>
@@ -86,17 +90,8 @@
                     </tbody>
                 </table>
 
-                <ol>
-                    <li>We use to for movemnt or direction: She goes <strong>to</strong> the gym. <br>We don't use to before home: go home <strong>NOT</strong> <s>go to home</s></li>
-                    <li>We use at and in for position.</li>
-                    <ul>
-                        <li>We use at + work, home, school, university.</li>
-                        <li>We use in + other places: a flat, an office, a room, etc.</li>
-                        <li>We can use in or at with some public places: a restaurant, the cinema, etc.
-                            <br>On Saturdays he usually has lunch <strong>in/at</strong> a restaurant.
-                        </li>
-                    </ul>
-                </ol>
+                <ion-text [innerHTML]="'PREPOSITIONS.explanation2' | translate"></ion-text>
+
             </ion-card>
         </div>
     </ion-content>

@@ -11,5 +11,61 @@
     },
     "ADJECTIVES": {
         "withhcode": "<ol> <li> Quando usamos um adjetivo com um substantivo, o adjetivo vai antes do substantivo: <br> It's a big city <strong> NÃO </strong> <s> It's a city big </s>. </li> <li>Também podemos usar os adjetivos sem substantivo, após o verbo be.</li> <li>Frequentemente usamos very e quite antes dos adjetivos: </li> <ol> <li>He's very tall.</li> <li>He's quite tall.</li> <li>He isn't very tall.</li> </ol> </ol>"
+    },
+    "ADVERBS": {
+        "manner": "<ion-card-title>Advérbios de modo</ion-card-title>",
+        "manner1": "<ul><li>Usamos advérbios para dizer como as pessoas fazem as coisas.</li><li>Os advérbios costumam seguir o verbo. <br> I speak English <strong>very well</strong>. <strong>NÃO</strong> <s>I speak very well English.</s></li></ul>",
+        "manner2": "<ul><li>Lembre-se da diferença entre adjetivos e advérbios: <br> I'm a <strong>careful</strong> driver. (careful é um adjetivo. Descreve o substantivo, driver). <br> I drive <strong>carefully</strong>. (carefully é um advérbio. Descreve o verbo, drive.)</li></ul>",
+        "modifying": "<ion-card-title>Advérbios modificadores</ion-card-title>",
+        "modifying2": "<ul><li>Usamos advérbios modificadores com adjetivos ou outros advérbios.</li><li>Eles sempre vão antes do adjetivo ou advérbio.</li></ul>",
+        "alertinfo": "<strong>palavras terminadas em -ly</strong> <br> Nem todas as palavras terminadas em ly são advérbios, e.g. friendly = ajetivo. <br> He's a <strong>friendly</strong> person."
+    },
+    "ARTICLES": {
+        "explanation": "<ol><li>Usamos a / an</li><ul><li>para dizer o que é algo ou qual trabalho as pessoas fazem. </li><li>em expressões de frequência.</li></ul><li>Usamos the</li><ul><li>quando o falante e o ouvinte sabem o que estamos falando.</li><li>quando existe apenas uma coisa: a internet, o sol etc.</li><li>antes dos adjetivos superlativos: the biggest, the best, etc.</li></ul><li>Costumamos usar <strong>a</strong> na primeira vez que mencionamos uma pessoa ou uma coisa e depois <strong>the</strong> a próxima vez. Porque agora está claro de quem ou do que estamos falando. </li><li>Não costumamos usar <strong>the</strong></li><ul><li>quando falamos de pessoas ou coisas em geral: <br> <strong>Men</strong> are more interested in sport then <strong>women.</strong></li><li>antes dos possessivos.</li></ul></ol>"
+    },
+    "BEGOING": {
+        "title": "<ion-card-title>Be going to (planos)</ion-card-title>",
+        "title1": "<ion-card-title>Be going to (predições)</ion-card-title>",
+        "explanation": "<ul><li>Podemos usar be going to + verbo (infinitivo) para fazer predições (= dizer o que você pensa ou pode ver vai acontecer no futuro).</li></ul>"
+    },
+    "CAN": {
+        "explanation": "<ul><li>can + infinitive tem diferentes significados:</li><ol><li>I can = Eu sei como fazer.<br>I can't = Eu não sei como fazer.</li><li>I can = É possível para mim.<br>I can't = É impossível para mim.</li><li>You can = Está certo/ É permitido.<br>You can't = Não está certo/ Não é permitido.</li><li>Can you...? = Por favor faça isso.<br>Can I...? = Está certo se eu fizer isso?</li></ol></ul>",
+        "explanation1": "<ul><li>can e can't são os mesmos para todas as pessoas (I, you, he, etc.). <strong>NÃO</strong> <s>He cans.</s></li><li>Contração: can't = cannot.</li><li>Não use 'to' depois do can.<br> I can swim. <strong>NÃO</strong> <s>I can to swim.</s></li></ul>"
+    },
+    "COMPARATIVES": {
+        "explanations": "<ul><li>Use adjetivos comparativos + 'than' para comparar duas coisas, pessoas, etc.</li></ul>"
+    },
+    "COUNTABLE": {
+        "explanation": "<ul><li>Existem dois tipos de substantivos em inglês: contável (C) e incontável (U). <br> C = itens que você pode contar, por exemplo maçãs <br> Os substantivos C podem ser singulares (uma maçã) ou plural (maçãs). <br> U = coisas que você não pode contar. manteiga, carne <br> <strong>NÃO</strong> <s>duas manteigas</s>, <s>três carnes</s> <br> Os substantivos U são normalmente singulares. </li> <li>Alguns substantivos podem ser C ou U, mas o significado é diferente.</li></ul>",
+        "explanation2": "<ul><li>Usamos a / an com substantivos C singulares; a / an = um.</li><li>Usamos some [+] com substantivos C no plural e com substantivos U: some = não é um número ou quantidade exata.</li><li>Usamos any em [-] e [?] com substantivos C plurais e com substantivos U.</li></ul>",
+        "alertinfo": "<strong>some em [?]</strong> <br> Usamos some em [?] para pedir e oferecer coisas. <br> Can I have <strong>some</strong> apples, please? <br> Would you like <strong>some</strong> coffee?"
+    },
+    "FREQUENCY": {
+        "explanation": "<ol><li>Usamos advérbios de frequência para dizer com que frequência você faz alguma coisa.</li><ul><li> Os advérbios de frequência vão <u>antes de</u> todos os verbos principais (exceto be).</li><li>Use um verbo [+] com never e hardly ever. He <strong>never</strong> smokes. <strong>NÃO</strong> <s>He doesn't never smoke.</s></li><li>Em sentenças negativas, o advérbio de frequência varia entre don't / doesn't e o verbo.</li></ul><li>As expressões de frequência geralmente ocorrem no final de uma fase de frase ou verbo.</li></ol>"
+    },
+    "IMPERATIVES": {
+        "explanation": "<ol><li>Use imperativos para dar ordens ou instruções.</li><ol><li> [+] imperativos = verbo (infinitivo).<br> [-] imperatives = don't + verbo (infinitivo).</li><li> Adicione please para ser educado:: Open the door, please.</li><li>Usamos frequentemente be + adjectives no imperativo: Be quite, Be careful, etc.</li><li>Não use um pronome com imperativos: Be quiet.</li></ol><li>Use Let's + verbo (infinitivo) para fazer sugestões. <br> Use Let's not + verbo (infinitivo) para fazer sugestões negativas: Let's not wait.</li></ol>"
+    },
+    "PRONOUNS": {
+        "explanation": "<ul><li>Pronomes substituem substantivos.</li><li>Usamos <strong>pronomes de sujeito</strong> quando o substantivo é o sujeito de um verbo (ou seja, a pessoa que executa a ação): <strong>John</strong> is a doctor. <strong>He</strong> lives in London.</li><li>Usamos <strong>pronomes de objeto</strong> quando o substantivo é o objeto de um verbo (ou seja, a pessoa que recebe a ação): Anna meets <strong>John</strong>. She invites <strong>him</strong>to a concert.</li><li>Pronomes de objeto vão <u>depois</u> do verbo: <br> I <strong>love you</strong>. <strong>NÃO</strong> <s>I you love</s>.</li><li>Também usamos pronomes de objeto depois de preposições (with, to, from, etc.): <br> Listen to <strong>me</strong>! I'm in love with <strong>her</strong>. <strong>NÃO</strong> <s>I'm in love with she</s></li></ul>"
+    },
+    "PASTSIMPLE": {
+        "explanation": "<ul><li>Usamos was / were para falar sobre o passado.</li><li>Usamos frequentemente was / were com expressões de tempo passado, <br> e.g. yesterday, last night, in 1945, etc.</li><li>Usamos was/were com nascimento: <br> I <strong>was born</strong> in Hungary</li></ul>",
+        "explanation1": "<ul><li>Usamos o passado simples para ações concluídas no passado.</li></ul>",
+        "explanation2": "<h6>Regras de ortografia para verbos regulares</h6>",
+        "explanation3": "<ul><li><strong>Contração:</strong> didn't = did not.</li><li>Verbos regulares no passado [+] terminam com -ed. <br> e.g. worked, lived, played.</li><li>O passado simples é o mesmo para todas as pessoas (I, you, she, etc.).</li><li>Use auxiliares did / didn't + infinitive para passado simples [?] e [-].<br>Did is the past of do.</li></ul>"
+    },
+    "PLURAL": {
+        "explanation": "<ul><li>Usamos there is / there are para dizer que alguém ou alguma coisa existe. Usamos there is + um substantivo singular e there are + substantivos plurais.</li><li>There is é frequentemente contraido para There's. There are geralmente não é contraido.</li><li>Quando falamos sobre uma lista de coisas usamos there is se a primeira palavra da lista for singular ou there are se a primeira palavra da lista for plural: <br> In my bedroom <strong>there's a</strong> bed, two chairs, and a desk. <br> In the living room <strong>there are</strong> two armchairs and a sofa.table-secondary</li></ul>",
+        "explanation1": "<ul> <li>Frequentemente usamos there is / there are com a / an, some e any.</li><li>Use some e any com substantivos plurais. <br> Some = não é um número exato.</li><li>Use some em sentenças [+] e any em sentenças [-] e [?].</li></ul>"
+    },
+    "POSSESSIVES": {
+        "explanation": "<ul><li>Os adjetivos estão sempre localizados diretamente na frente do substantivo a que se referem.</li><li>Não incluímos um S no adjetivo quando o substantivo é plural como em muitas outras línguas.</li><li>No entanto, o verbo usado precisa estar de acordo com o substantivo - se o substantivo for singular, o verbo será singular; se o substantivo é plural, o verbo é plural.<br>e.g. My pen <strong>is</strong> black. (Singular)<br>e.g. My pens <strong>are</strong> black. (Plural)</li></ul>"
+    },
+    "PREPOSITIONS": {
+        "explanation": "<ul><li>Usamos <strong>in</strong> para partes do dias e estações.</li><li>Usamos <strong>on</strong> para dias.</li><li>Usamos <strong>at</strong> para horários do dia, noite, fim de semana e festivais.</li></ul>",
+        "explanation1": "<h5>Movimento e lugar</h5>",
+        "explanation2": "<ol><li>Usamos para movimento ou direção: She goes <strong>to</strong> the gym. <br>Não usamos to antes de home: go home <strong>NÃO</strong> <s>go to home</s></li><li>Usamos at e in para posições.</li><ul><li>Usamos at + work, home, school, university.</li><li>Usamos in + outros lugares: a flat, an office, a room, etc.</li><li>Podemos usar em ou em alguns locais públicos: a restaurant, the cinema, etc.<br>On Saturdays he usually has lunch <strong>in/at</strong> a restaurant.</li></ul></ol>"
     }
+
 }

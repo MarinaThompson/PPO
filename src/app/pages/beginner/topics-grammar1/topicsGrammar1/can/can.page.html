@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -38,24 +44,7 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>can + infinitive has different meanings:</li>
-
-                    <ol>
-                        <li>I can = I know how to.
-                            <br>I can't = I don't know how to.
-                        </li>
-                        <li>I can = It's possible for me.
-                            <br>I can't = It's impossible for me.
-                        </li>
-                        <li>You can = It's OK/ It's permitted.
-                            <br>You can't = It's not OK/ It's not permitted.
-                        </li>
-                        <li>Can you...? = Please do it.
-                            <br>Can I...? = It's OK if I do it?
-                        </li>
-                    </ol>
-                </ul>
+                <ion-text [innerHTML]="'CAN.explanation' | translate"></ion-text>
 
                 <table class="table">
 
@@ -98,12 +87,8 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>can and can't are the same for all the persons (I, you, he, etc.). <strong>NOT</strong> <s>He cans.</s></li>
-                    <li>Contraction: can't = cannot.</li>
-                    <li>Don't use 'to' after can.
-                        <br> I can swim. <strong>NOT</strong> <s>I can to swim.</s></li>
-                </ul>
+                <ion-text [innerHTML]="'CAN.explanation1' | translate"></ion-text>
+
             </ion-card>
         </div>
     </ion-content>

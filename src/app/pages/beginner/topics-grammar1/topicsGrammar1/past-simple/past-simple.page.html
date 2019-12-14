@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -26,11 +32,8 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li>We use was/were to talk about the past.</li>
-                    <li>We often use was/were with past time expressions, <br> e.g. yesterday, last night, in 1945, etc.</li>
-                    <li>We use was/were with born: <br> I <strong>was born</strong> in Hungary</li>
-                </ul>
+                <ion-text [innerHTML]="'PASTSIMPLE.explanation' | translate"></ion-text>
+
 
                 <table class="table">
                     <tbody>
@@ -104,11 +107,11 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li>We use the past simple for finished actions in the past.</li>
-                </ul>
+                <ion-text [innerHTML]="'PASTSIMPLE.explanation1' | translate"></ion-text>
 
-                <h6>Spelling rules for regular verbs</h6>
+
+                <ion-text [innerHTML]="'PASTSIMPLE.explanation2' | translate"></ion-text>
+
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -199,15 +202,8 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li><strong>Contraction:</strong> didn't = did not.</li>
-                    <li>Regular verbs in the past [+] end in -ed. <br> e.g. worked, lived, played.
-                    </li>
-                    <li>The past simple is the same for all persons (I, you, she, etc.).</li>
-                    <li>Use auxiliaries did / didn't + infinitive for past simple [?] and [-].
-                        <br>Did is the past of do.
-                    </li>
-                </ul>
+                <ion-text [innerHTML]="'PASTSIMPLE.explanation3' | translate"></ion-text>
+
 
                 <h5>Past simple: irregular verbs</h5>
 
@@ -299,9 +295,9 @@
 
                 <ul>
                     <li>Use the irregular past form only in [+] sentences: <br> I saw a film last night.</li>
-                    <li>Use the infinitive adter did/didn't: <br>
-                        <strong>Did</strong> you <strong>see</strong> a film last night <br> I <strong>didn't go</strong> out last night</li>
+                    <li>Use the infinitive after did/didn't: <br><strong>Did</strong> you <strong>see</strong> a film last night <br> I <strong>didn't go</strong> out last night</li>
                 </ul>
+
             </ion-card>
         </div>
     </ion-content>

@@ -11,6 +11,62 @@
     },
     "ADJECTIVES": {
         "withhcode": "<ol> <li> When we use an adjective with a noun, the adjective goes before the noun: <br> It's a big city <strong> NOT </strong> <s> It's a city big </s>. </li> <li>We can also use the adjectives without a noun, after the verb be.</li> <li>We often use very and quite before adjectives: </li> <ol> <li>He's very tall.</li> <li>He's quite tall.</li> <li>He isn't very tall.</li> </ol> </ol>"
+    },
+    "ADVERBS": {
+        "manner": "<ion-card-title>Adverbs of manner</ion-card-title>",
+        "manner1": "<ul><li>We use adverbs of manner to say how people do things.</li><li>Adverbs usually go after the verb. <br> I speak English <strong>very well</strong>. <strong>NOT</strong> <s>I speak very well English.</s></li></ul>",
+        "manner2": "<ul><li>Remember the difference between adjectives and adverbs: <br> I'm a <strong>careful</strong> driver. (careful is an adjective. It describes the noun, driver). <br> I drive <strong>carefully</strong>. (carefully is an adverb. It describes the verb, drive.)</li></ul>",
+        "modifying": "<ion-card-title>Modifying adverbs</ion-card-title>",
+        "modifying2": "<ul><li>We use modifying adverbs with adjectives or other adverbs.</li><li>They always go before the adjective or adverb.</li></ul>",
+        "alertinfo": "<strong>words ending in -ly</strong> <br> Not all words that end in ly are adverbs, e.g. friendly = adjective. <br> He's a <strong>friendly</strong> person."
+    },
+    "ARTICLES": {
+        "explanation": "<ol><li>We use a / an</li><ul><li>to say what something is or what job people do.</li><li>in expressions of frequency.</li></ul><li>We use the</li><ul><li>when the speaker and hearer know the thing we are talking about.</li><li>when there is only one of something: the internet, the sun, etc.</li><li>before the superlative adjectives: the biggest, the best, etc.</li></ul><li>We often use <strong>a</strong> the first time we mention a person or a thing and then <strong>the</strong> the next time. because it is now clear who or what we are talking about. </li><li>We don't usually use <strong>the</strong></li><ul><li>when we talk about people or things in general: <br> <strong>Men</strong> are more interested in sport then <strong>women.</strong></li><li>before possessive's. </li></ul></ol>"
+    },
+    "BEGOING": {
+        "title": "<ion-card-title>Be going to (plans)</ion-card-title>",
+        "title1": "<ion-card-title>Be going to (predictions)</ion-card-title>",
+        "explanation": "<ul><li>We can use be going to + verb (infinitive) to make predictions (= to say what you think or can see is going to happen in the future).</li></ul>"
+    },
+    "CAN": {
+        "explanation": "<ul><li>can + infinitive has different meanings:</li><ol><li>I can = I know how to.<br>I can't = I don't know how to.</li><li>I can = It's possible for me.<br>I can't = It's impossible for me.</li><li>You can = It's OK/ It's permitted.<br>You can't = It's not OK/ It's not permitted.</li><li>Can you...? = Please do it.<br>Can I...? = It's OK if I do it?</li></ol></ul>",
+        "explanation1": "<ul><li>can and can't are the same for all the persons (I, you, he, etc.). <strong>NOT</strong> <s>He cans.</s></li><li>Contraction: can't = cannot.</li><li>Don't use 'to' after can.<br> I can swim. <strong>NOT</strong> <s>I can to swim.</s></li></ul>"
+    },
+    "COMPARATIVES": {
+        "explanations": "<ul><li>Use comparative adjectives + than to compare two things, people, etc.</li></ul>"
+    },
+    "COUNTABLE": {
+        "explanation": "<ul><li>There are two kinds of nouns in English: countable (C) and uncountable (U). <br> C = things you can count, e.g. apples. <br> C nouns can be singular (an apple) or plural (apples). <br> U = things you can't count. butter, meat <br> <strong>NOT</strong> <s>two butters</s>, <s>three meats</s> <br> U nouns are normally singular. </li> <li>Some nouns can be C or U but the meaning is different.</li></ul>",
+        "explanation2": "<ul><li>We use a / an with singular C nouns; a / an = one.</li><li>We use some [+] with plural C nouns and with U nouns: some = not an exact number or quantity.</li><li>We use any in [-] and [?] with plural C nouns and with U nouns.</li></ul>",
+        "alertinfo": "<strong>some in [?]</strong> <br> We use some in [?] to ask for and offer things. <br> Can I have <strong>some</strong> apples, please? <br> Would you like <strong>some</strong> coffee?"
+    },
+    "FREQUENCY": {
+        "explanation": "<ol><li>We use adverbs os frequency to say how often you do something.</li><ul><li>Adverbs of frequency go <u>before</u> all main verbs (except be).</li><li>Use a [+] verb with never and hardly ever. He <strong>never</strong> smokes. <strong>NOT</strong> <s>He doesn't never smoke.</s></li><li>In negative sentences the adverb of frequency goes between don't/doesn't and the verb.</li></ul><li>Expressions of frequency usually go at the end of a sentence or verb phase.</li></ol>"
+    },
+    "IMPERATIVES": {
+        "explanation": "<ol><li>Use imperatives to give orders or instructions.</li><ol><li>[+] imperatives = verb (infinitive).<br> [-] imperatives = don't + verb (infinitive).</li><li>Add please to be polite: Open the door, please.</li><li>We often use be + adjectives in imperatives: Be quite, Be careful, etc.</li><li>Don't use a pronoun with imperatives: Be quiet.</li></ol><li>Use Let's + verb (infinitive) to make suggestions. <br> Use Let's not + verb (infinitive) to make a negative suggestion: Let's not wait.</li></ol>"
+    },
+    "PRONOUNS": {
+        "explanation": "<ul><li>Pronouns take place of nouns.</li><li>We use <strong>subject</strong> pronouns when the noun is the subject of a verb (i.e. the person who does the action): <strong>John</strong> is a doctor. <strong>He</strong> lives in London.</li><li>We use <strong>object</strong> pronouns when the noun is the object of a verb (i.e. the person who receives the action): Anna meets <strong>John</strong>. She invites <strong>him</strong>to a concert.</li><li>Object pronouns go <u>after</u> the verb: <br> I <strong>love you</strong>. <strong>NOT</strong> <s>I you love</s>.</li><li>We also use object pronouns after prepositions (with, to, from, etc.): <br> Listen to <strong>me</strong>! I'm in love with <strong>her</strong>. <strong>NOT</strong> <s>I'm in love with she</s></li></ul>"
+    },
+    "PASTSIMPLE": {
+        "explanation": "<ul><li>We use was/were to talk about the past.</li><li>We often use was/were with past time expressions, <br> e.g. yesterday, last night, in 1945, etc.</li><li>We use was/were with born: <br> I <strong>was born</strong> in Hungary</li></ul>",
+        "explanation1": "<ul><li>We use the past simple for finished actions in the past.</li></ul>",
+        "explanation2": "<h6>Spelling rules for regular verbs</h6>",
+        "explanation3": "<ul><li><strong>Contraction:</strong> didn't = did not.</li><li>Regular verbs in the past [+] end in -ed. <br> e.g. worked, lived, played.</li><li>The past simple is the same for all persons (I, you, she, etc.).</li><li>Use auxiliaries did / didn't + infinitive for past simple [?] and [-].<br>Did is the past of do.</li></ul>"
+    },
+    "PLURAL": {
+        "explanation": "<ul><li>We use there is / there are to say that somebody or something exists. We use there is + a singular noun and there are + plural nouns.</li><li>There is is often contracted to There's. There are is not usually contracted.</li><li>When we talk about a list of things we use there is if the first word in the list is singular or there are if the first word on the list is plural: <br> In my bedroom <strong>there's a</strong> bed, two chairs, and a desk. <br> In the living room <strong>there are</strong> two armchairs and a sofa.table-secondary</li></ul>",
+        "explanation1": "<ul> <li>We often use there is / there are with a / an, some and any.</li><li>Use some and any with plural nouns. <br> Some = not an exact number.</li><li>Use some in [+] sentences and any in [-] and [?].</li></ul>"
+    },
+    "POSSESSIVES": {
+        "explanation": "<ul><li>The adjectives are always located directly in front of the noun they refer to.</li><li>We don't include an S to the adjective when the noun is plural like in many other languages.</li><li>However, the verb that is used needs to be in agreement with the noun - if the noun is singular then the verb is singular; if the noun is plural then the verb is plural.<br>e.g. My pen <strong>is</strong> black. (Singular)<br>e.g. My pens <strong>are</strong> black. (Plural)</li></ul>"
+    },
+    "PREPOSITIONS": {
+        "explanation": "<ul><li>We use <strong>in</strong> for parts of day and seasons.</li><li>We use <strong>on</strong> for days.</li><li>We use <strong>at</strong> for times of the day, night, the weekend, and festivals.</li></ul>",
+        "explanation1": "<h5>Movement and place</h5>",
+        "explanation2": "<ol><li>We use to for movemnt or direction: She goes <strong>to</strong> the gym. <br>We don't use to before home: go home <strong>NOT</strong> <s>go to home</s></li><li>We use at and in for position.</li><ul><li>We use at + work, home, school, university.</li><li>We use in + other places: a flat, an office, a room, etc.</li><li>We can use in or at with some public places: a restaurant, the cinema, etc.<br>On Saturdays he usually has lunch <strong>in/at</strong> a restaurant.</li></ul></ol>"
     }
+
 
 }

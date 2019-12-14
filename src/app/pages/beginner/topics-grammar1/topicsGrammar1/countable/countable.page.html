@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -32,11 +38,7 @@
                     <span> meat </span>
                 </div>
 
-                <ul>
-                    <li>There are two kinds of nouns in English: countable (C) and uncountable (U). <br> C = things you can count, e.g. apples. <br> C nouns can be singular (an apple) or plural (apples). <br> U = things you can't count. butter, meat <br>                        <strong>NOT</strong> <s>two butters</s>, <s>three meats</s> <br> U nouns are normally singular.
-                    </li>
-                    <li>Some nouns can be C or U but the meaning is different.</li>
-                </ul>
+                <ion-text [innerHTML]="'COUNTABLE.explanation' | translate"></ion-text>
 
                 <div class="box1">
                     <img src="/assets/img/icecreeam.jpg" />
@@ -74,14 +76,11 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>We use a / an with singular C nouns; a / an = one.</li>
-                    <li>We use some [+] with plural C nouns and with U nouns: some = not an exact number or quantity.</li>
-                    <li>We use any in [-] and [?] with plural C nouns and with U nouns.</li>
-                </ul>
+                <ion-text [innerHTML]="'COUNTABLE.explanation2' | translate"></ion-text>
+
 
                 <div class="alert alert-info" role="alert">
-                    <strong>some in [?]</strong> <br> We use some in [?] to ask for and offer things. <br> Can I have <strong>some</strong> apples, please? <br> Would you like <strong>some</strong> coffee?
+                    <ion-text [innerHTML]="'COUNTABLE.alertinfo' | translate"></ion-text>
                 </div>
 
 

@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -12,7 +18,7 @@
 
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Be going to (plans)</ion-card-title>
+                    <ion-text [innerHTML]="'BEGOING.title' | translate"></ion-text>
                 </ion-card-header>
 
                 <h6> I'<strong>m going to have </strong> a holiday next month. <br> I'
@@ -54,12 +60,10 @@
                 </table>
 
                 <ion-card-header>
-                    <ion-card-title>Be going to (predictions)</ion-card-title>
+                    <ion-text [innerHTML]="'BEGOING.title1' | translate"></ion-text>
                 </ion-card-header>
 
-                <ul>
-                    <li>We can use be going to + verb (infinitive) to make predictions (= to say what you think or can see is going to happen in the future).</li>
-                </ul>
+                <ion-text [innerHTML]="'BEGOING.explanation' | translate"></ion-text>
 
                 <br>
                 <h6> I think it<strong>'s going to</strong> rain. <br> You <strong>'re going to be</strong> very happy. <br> I'm sure they<strong>'re going to win.</strong> </h6>

@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -62,15 +68,8 @@
 
                     </tbody>
                 </table>
+                <ion-text [innerHTML]="'POSSESSIVES.explanation' | translate"></ion-text>
 
-                <ul>
-                    <li>The adjectives are always located directly in front of the noun they refer to.</li>
-                    <li>We don't include an S to the adjective when the noun is plural like in many other languages.</li>
-                    <li>However, the verb that is used needs to be in agreement with the noun - if the noun is singular then the verb is singular; if the noun is plural then the verb is plural.
-                        <br>e.g. My pen <strong>is</strong> black. (Singular)<br>e.g. My pens <strong>are</strong> black. (Plural)
-                    </li>
-
-                </ul>
             </ion-card>
         </div>
     </ion-content>

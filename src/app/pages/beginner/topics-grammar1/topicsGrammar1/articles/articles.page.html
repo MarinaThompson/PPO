@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -16,30 +22,11 @@
                 </ion-card-header>
 
                 <h6> <strong>1. a / an</strong> </h6>
-                <br> What is this? It's <strong>a</strong> photo of my daughter. <br> What does she do? Sally's <strong>an</strong> engineer <br> How often do they gave classes? Three times <strong>a</strong> week
-                <h6> <strong>2. the </strong> </h6> <br> Can you close <strong>the window</strong>, please? <br> Can you check their address on <strong>the internet?</strong> <br> It's <strong>the best</strong> restaurant I know.
-                <h6><strong>3. a or the?</strong></h6> <br> Let's have <strong>a</strong> pizza. <strong>The</strong> pizzas are very good here.
+                What is this? It's <strong>a</strong> photo of my daughter. <br> What does she do? Sally's <strong>an</strong> engineer <br> How often do they gave classes? Three times <strong>a</strong> week. <br>
+                <h6> <strong>2. the </strong> </h6> Can you close <strong>the window</strong>, please? <br> Can you check their address on <strong>the internet?</strong> <br> It's <strong>the best</strong> restaurant I know. <br>
+                <h6><strong>3. a or the?</strong></h6> Let's have <strong>a</strong> pizza. <strong>The</strong> pizzas are very good here.
                 <br>
-                <ol>
-                    <li>We use a / an</li>
-                    <ul>
-                        <li>to say what something is or what job people do.</li>
-                        <li>in expressions of frequency.</li>
-                    </ul>
-                    <li>We use the</li>
-                    <ul>
-                        <li>when the speaker and hearer know the thing we are talking about.</li>
-                        <li>when there is only one of something: the internet, the sun, etc.</li>
-                        <li>before the superlative adjectives: the biggest, the best, etc.</li>
-                    </ul>
-                    <li>We often use <strong>a</strong> the first time we mention a person or a thing and then <strong>the</strong> the next time. because it is now clear who or what we are talking about.
-                    </li>
-                    <li>We don't usually use <strong>the</strong></li>
-                    <ul>
-                        <li>when we talk about people or things in general: <br> <strong>Men</strong> are more interested in sport then <strong>women.</strong></li>
-                        <li>before possessive's. </li>
-                    </ul>
-                </ol>
+                <ion-text [innerHTML]="'ARTICLES.explanation' | translate"></ion-text>
 
 
             </ion-card>
