@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -58,19 +64,15 @@
                     </tbody>
                 </table>
 
-                <ul>
-                    <li>The word order for present simple questions with do and does is: <strong>ASI</strong> (<strong>A</strong>uxiliary, <strong>S</strong>ubject, <strong>I</strong>finitive), e.g. Do you live here? OR <br><strong>QUASI</strong> (
-                        <strong>Q</strong>uestion, <strong>A</strong>uxiliary, <strong>S</strong>ubject, <strong>I</strong>finitive), e.g. Where do you live?;
-                    </li>
-                    <li>We often use question phases beginning with What, e.g. What colour...? What size...? What make...? What time...?</li>
-                </ul>
+                <ion-text [innerHTML]="'WORDORDER.explanation' | translate"></ion-text>
 
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="card">
                             <div class="card-body">
                                 <h6 class="card-title"><strong>Word order in be questions:</strong></h6>
-                                <p class="card-text"> Remember the word order in questions with be. Put be before the subject. Where are you from? What's your name? Is he Spanish?
+                                <p class="card-text">
+                                    <ion-text [innerHTML]="'WORDORDER.explanation1' | translate"></ion-text>
                                 </p>
                             </div>
                         </div>

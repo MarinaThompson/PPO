@@ -12,19 +12,229 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
+            <ion-slide>
+                <div class="slide-inner ion-padding">
 
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+                    <div class="img">
+                        <img src="/assets/img/activities/wake.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Wake up</h4> <br>
+                        <h6>Stop sleeping</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="wakeToSpeech(text)">Listen</ion-button>
+                    </div>
+
                 </div>
-                <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/shower.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Take a shower</h4> <br>
+                        <h6>Literally, to clean oneself in a shower.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="showerToSpeech(text)">Listen</ion-button>
+                    </div>
+
                 </div>
-                <div>
-                    <h6 [innerHTML]="slide.fonetica"></h6>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/dressed.png" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Get dressed</h4> <br>
+                        <h6>To put your clothes on.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="dressedToSpeech(text)">Listen</ion-button>
+                    </div>
+
                 </div>
-                <div>
-                    <h4 [innerHTML]="slide.example"></h4>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/breakfast.png" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Have breakfast</h4> <br>
+                        <h6>The first meal of the day especially when taken in the morning.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="breakfastToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/dog.gif" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Take a dog for walk</h4> <br>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="dogToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/doExercise.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Do exercise</h4> <br>
+                        <h6>A process or activity carried out for a specific purpose, especially one concerned with a specified area or skill.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="exerciseToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/goShopping.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Go shopping</h4> <br>
+                        <h6>To visit places where goods are sold in order to look at and buy things.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="shoppingToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/housework.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Do the housework</h4> <br>
+                        <h6>Is work such as cleaning or washing that is done in a house.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="houseworkToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/lunch.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Have lunch</h4> <br>
+                        <h6>When we talk about eating our midday meal</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="lunchToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/watchTV.png" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Watch TV</h4> <br>
+
+                    </div>
+
+                    <div>
+                        <ion-button (click)="watchToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/coffee.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Have a coffee</h4> <br>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="coffeeToSpeech(text)">Listen</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <div class="img">
+                        <img src="/assets/img/activities/goBed.jpg" alt="">
+                    </div>
+
+                    <div class="titulo">
+                        <h4>Go bed</h4> <br>
+                        <h6>To lie down in one´s bed to sleep.</h6>
+                    </div>
+
+                    <div>
+                        <ion-button (click)="bedToSpeech(text)">Listen</ion-button>
+                    </div>
+
                 </div>
             </ion-slide>
         </ion-slides>

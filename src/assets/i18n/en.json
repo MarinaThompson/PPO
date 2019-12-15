@@ -66,6 +66,47 @@
         "explanation": "<ul><li>We use <strong>in</strong> for parts of day and seasons.</li><li>We use <strong>on</strong> for days.</li><li>We use <strong>at</strong> for times of the day, night, the weekend, and festivals.</li></ul>",
         "explanation1": "<h5>Movement and place</h5>",
         "explanation2": "<ol><li>We use to for movemnt or direction: She goes <strong>to</strong> the gym. <br>We don't use to before home: go home <strong>NOT</strong> <s>go to home</s></li><li>We use at and in for position.</li><ul><li>We use at + work, home, school, university.</li><li>We use in + other places: a flat, an office, a room, etc.</li><li>We can use in or at with some public places: a restaurant, the cinema, etc.<br>On Saturdays he usually has lunch <strong>in/at</strong> a restaurant.</li></ul></ol>"
+    },
+    "PRESENTCONTINUOUS": {
+        "explanation": "<ul><li>We use the present continuous for things that are happening now/at the moment.</li><li>We also use the present continuous with longer periods of time, e.g. today, this week.<br>I'<strong>m working</strong> at home <strong>this week</strong> because my daughter is not very well.</li></ul>",
+        "explanation1": "<h5>Spelling rules for the -ing form</h5>"
+    },
+    "PRESENTPERFECT": {
+        "title": "<ion-card-title>Be going to (plans)</ion-card-title>",
+        "title1": "<ion-card-title>Be going to (predictions)</ion-card-title>",
+        "explanation": "<ul><li>We can use be going to + verb (infinitive) to make predictions (= to say what you think or can see is going to happen in the future).</li></ul>"
+    },
+    "PRESENTSIMPLE": {
+        "title": "<h6>Forming the Simple Present tense: to think</h6>",
+        "explanation": "<h6>The Simple Present is used to <b>describe habits</b>, <b>unchanging situations</b>, <b>general truths</b>, and <b>fixed arrangements</b>. The simple present tense is simple to form. Just use the base form of the verb: (I take, you take, we take, they take) The 3rd person singular takes an -s at the end: he takes, she takes, etc.</h6>",
+        "becareful": "Be careful! The simple present is not used to express actions happening now.",
+        "examples": "Examples",
+        "example1": "<strong>For habits:</strong>",
+        "example2": "<strong>For repeated actions or events:</strong>",
+        "example3": "<strong>For general truths:</strong>",
+        "example4": "<strong>For fixed arrangements:</strong>",
+        "title2": "<h5>Notes on the Simple Present, third person singular:</h5>",
+        "explanation1": "<ul><li>In the third person singular the verb <strong>always ends in -s</strong>: he want<strong>s</strong>, she need<strong>s</strong>, he give<strong>s</strong>, she think<strong>s</strong>.</li><li>Negative and question forms use DOES (= the third person of the auxiliary 'DO') + the infinitive of the verb: He wants ice cream. <strong>Does</strong> he want strawberry? He <strong>does</strong> not want vanilla.</li><li>Verbs ending in <strong>-y</strong>: the third person changes the <strong>-y</strong> to <strong>-ies</strong>: fly --> flies, cry --> cries <br><strong>Exception</strong>: if there is a vowel before the -y: play --> plays, pray --> prays</li><li>Add <strong>-es</strong> to verbs ending in: <strong>-ss, -x, -sh, -ch</strong>: he passes, she catches, he fixes, it pushes</li></ul>"
+    },
+    "QUANTIFIERS": {
+        "explanation": "<ul><li>We use How much...? with uncontable (U) nouns and How many...? with plural countable (C) nouns.</li><li>We use: <br> a lot (of) with C and U nouns for a <strong>big quantity.</strong> <br> quite a lot (of) for a <strong>medium quantity.</strong> <br> a little / not...much with U nouns for a <strong>small quantity.</strong> <br> a few / not...many with C plural nouns for a <strong>small quantity.</strong> <br> not...any (none in short answers) for <strong>zero quantity.</strong></li></ul>",
+        "explanation2": " <ul><li>In [+] sentences we usually use a lot of.</li><li>In [-] sentences and [?], we usually use much and many. <br> I don't drink <strong>much</strong> water. <br> Do you drink <strong>much</strong> coffee?</li><li>It is also possible to use a lot of in [-] and [?]: <br> Do you drink <strong>a lot of</strong> coffee? <br> I don't eat <strong>a lot of</strong> vegetables.</li></ul>"
+    },
+    "SUPERLATIVE": {
+        "explanation": "<ul><li>Use the + superlative to say which is the (biggest, etc.) in a group.</li><li>After superlatives, we use in (not of) + places, e.g. the world, the class</li></ul>"
+    },
+    "VERBBE": {
+        "explanation": "<ul><li>Always use a subject pronoun (you, he, etc.) with a verb, e.g. <b>They</b>'re teachers<br><b>NOT</b> <s>Are teachers.</s></li><li>Always use capital I, e.g. He's Mike and <b>I</b>'m Sally <b>NOT</b> <s>i'm Sally.</s></li><li>you = singular and plural.</li><li>Use he for a man, she for a woman, and it for a thing.</li><li>Use they for people and things.</li><li>We use contractions in conversation and in informal writing.</li><li>In questions, put am, are, is <b>before</b> I, you, he.</li></ul>"
+    },
+    "VERBSINFINITIVE": {
+        "explanation": "<ul><li>Many verbs are followed by a verb in the infinitive with to.</li><li>These include: want, need, learn, promise, decide, plan and hope.</li></ul>",
+        "explanation1": "<ul><li>I would like to = I want to (now or in the future).</li><li><strong>Contractions</strong>: 'd = would; wouldn't = would not.</li><li>Use the infinitive with to after would like. <br> I <strong>would like to learn</strong>. <strong>NOT</strong> <s>I would like learn.</s></li><li>Remember you can also use Would you like...? to offer: <br> <strong>Woukd you like</strong> a drink?</li><li>would you like is the same for all persons.</li></ul>",
+        "explanation2": "<strong>I'd like</strong> to dance = I want to dance. <br>",
+        "explanation3": "<strong>I like</strong> dancing = I enjoy it; I like it in general."
+    },
+    "WORDORDER": {
+        "explanation": "<ul><li>The word order for present simple questions with do and does is: <strong>ASI</strong> (<strong>A</strong>uxiliary, <strong>S</strong>ubject, <strong>I</strong>finitive), e.g. Do you live here? OR <br><strong>QUASI</strong> (<strong>Q</strong>uestion, <strong>A</strong>uxiliary, <strong>S</strong>ubject, <strong>I</strong>finitive), e.g. Where do you live?;</li><li>We often use question phases beginning with What, e.g. What colour...? What size...? What make...? What time...?</li></ul>",
+        "explanation1": "Remember the word order in questions with be. Put be before the subject. Where are you from? What's your name? Is he Spanish?"
     }
 
 

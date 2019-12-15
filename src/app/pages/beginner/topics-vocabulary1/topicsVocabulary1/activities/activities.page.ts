@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 
 @Component({
   selector: 'app-activities',
@@ -19,87 +20,126 @@ export class ActivitiesPage implements OnInit {
     }
   };
 
-  constructor() {
-    this.slides = [
-      {
-        id: 1,
-        img: '/assets/img/activities/wake.jpg',
-        titulo: 'Wake up',
-        example: 'Stop sleeping',
+  constructor(private tts: TextToSpeech) { }
 
-      },
-      {
-        id: 2,
-        img: '/assets/img/activities/shower.jpg',
-        titulo: 'Take a shower',
-        example: 'Literally, to clean oneself in a shower.',
+  wakeToSpeech(text) {
+    this.tts.speak({
+      text: "Wake up",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
 
-      },
-      {
-        id: 3,
-        img: '/assets/img/activities/dressed.png',
-        titulo: 'Get dressed',
-        example: 'To put your clothes on.',
+  showerToSpeech(text) {
+    this.tts.speak({
+      text: "Take a shower",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
 
-      },
-      {
-        id: 4,
-        img: '/assets/img/activities/breakfast.png',
-        titulo: 'Have breakfast',
-        example: 'The first meal of the day especially when taken in the morning.',
+  dressedToSpeech(text) {
+    this.tts.speak({
+      text: "Get dressed",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
 
-      },
-      {
-        id: 5,
-        img: '/assets/img/activities/dog.gif',
-        titulo: 'Take a dog for walk',
-        example: '',
+  breakfastToSpeech(text) {
+    this.tts.speak({
+      text: "Have breakfast",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
 
-      },
-      {
-        id: 6,
-        img: '/assets/img/activities/doExercise.jpg',
-        titulo: 'Do exercise',
-        example: 'A process or activity carried out for a specific purpose, especially one concerned with a specified area or skill.',
+  dogToSpeech(text) {
+    this.tts.speak({
+      text: "Take a dog for walk",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
 
-      },
-      {
-        id: 7,
-        img: '/assets/img/activities/goShopping.jpg',
-        titulo: 'Go shopping',
-        example: 'To visit places where goods are sold in order to look at and buy things.',
-      },
-      {
-        id: 8,
-        img: '/assets/img/activities/housework.jpg',
-        titulo: 'Do the housework',
-        example: 'Is work such as cleaning or washing that is done in a house.',
-      },
-      {
-        id: 9,
-        img: '/assets/img/activities/lunch.jpg',
-        titulo: 'Have lunch',
-        example: 'When we talk about eating our midday meal.',
-      },
-      {
-        id: 10,
-        img: '/assets/img/activities/watchTV.png',
-        titulo: 'Watch TV',
-        example: '',
-      },
-      {
-        id: 11,
-        img: '/assets/img/activities/coffee.jpg',
-        titulo: 'Have a coffee',
-        example: '',
-      },
-      {
-        id: 12,
-        img: '/assets/img/activities/goBed.jpg',
-        titulo: 'Go bed',
-        example: 'to lie down in one´s bed to sleep.',
-      }
-    ]
+  exerciseToSpeech(text) {
+    this.tts.speak({
+      text: "Do exercise",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  shoppingToSpeech(text) {
+    this.tts.speak({
+      text: "Go shopping",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  houseworkToSpeech(text) {
+    this.tts.speak({
+      text: "Do the housework",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  lunchToSpeech(text) {
+    this.tts.speak({
+      text: "Have lunch",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  watchToSpeech(text) {
+    this.tts.speak({
+      text: "Watch TV",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  coffeeToSpeech(text) {
+    this.tts.speak({
+      text: "Have a coffee",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  bedToSpeech(text) {
+    this.tts.speak({
+      text: "Go bed",
+      locale: 'en-US',
+      rate: 0.70
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
   }
 
   ngOnInit() {

@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -20,10 +26,8 @@
                 <br>
                 <br>
 
-                <ul>
-                    <li>Use the + superlative to say which is the (biggest, etc.) in a group.</li>
-                    <li>After superlatives, we use in (not of) + places, e.g. the world, the class</li>
-                </ul>
+                <ion-text [innerHTML]="'SUPERLATIVE.explanation' | translate"></ion-text>
+
 
 
                 <table class="table table-hover">

@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -12,7 +18,7 @@
 
             <ion-card>
                 <ion-card-header>
-                    <ion-card-title>Adverbs of manner</ion-card-title>
+                    <ion-card-title>Verbs + to + infinitive</ion-card-title>
                 </ion-card-header>
 
                 <h6>
@@ -20,27 +26,18 @@
                     <strong>Would you like to be</strong> famous?
                 </h6>
 
-                <ul>
-                    <li>Manu verbs are followed by a verb in the infinitive with to.</li>
-                    <li>These include: want, need, learn, promise, decide, plan and hope.</li>
-                </ul>
+                <ion-text [innerHTML]="'VERBSINFINITIVE.explanation' | translate"></ion-text>
 
                 <ion-card-header>
                     <ion-card-title>would like to</ion-card-title>
                 </ion-card-header>
 
-                <ul>
-                    <li>I would like to = I want to (now or in the future).</li>
-                    <li><strong>Contractions</strong>: 'd = would; wouldn't = would not.</li>
-                    <li>Use the infinitive with to after would like. <br> I <strong>would like to learn</strong>. <strong>NOT</strong> <s>I would like learn.</s></li>
-                    <li>Remember you can also use Would you like...? to offer: <br> <strong>Woukd you like</strong> a drink?</li>
-                    <li>would you like is the same for all persons.</li>
-                </ul>
+                <ion-text [innerHTML]="'VERBSINFINITIVE.explanation1' | translate"></ion-text>
 
                 <div class="alert alert-info" role="alert">
                     <strong>would like and like</strong> <br>
-                    <strong>I'd like</strong> to dance = I want to dance. <br>
-                    <strong>I like</strong> dancing = I enjoy it; I like it in general.
+                    <ion-text [innerHTML]="'VERBSINFINITIVE.explanation2' | translate"></ion-text>
+                    <ion-text [innerHTML]="'VERBSINFINITIVE.explanation3' | translate"></ion-text>
                 </div>
 
             </ion-card>

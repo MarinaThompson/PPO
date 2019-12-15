@@ -66,6 +66,47 @@
         "explanation": "<ul><li>Usamos <strong>in</strong> para partes do dias e estações.</li><li>Usamos <strong>on</strong> para dias.</li><li>Usamos <strong>at</strong> para horários do dia, noite, fim de semana e festivais.</li></ul>",
         "explanation1": "<h5>Movimento e lugar</h5>",
         "explanation2": "<ol><li>Usamos para movimento ou direção: She goes <strong>to</strong> the gym. <br>Não usamos to antes de home: go home <strong>NÃO</strong> <s>go to home</s></li><li>Usamos at e in para posições.</li><ul><li>Usamos at + work, home, school, university.</li><li>Usamos in + outros lugares: a flat, an office, a room, etc.</li><li>Podemos usar em ou em alguns locais públicos: a restaurant, the cinema, etc.<br>On Saturdays he usually has lunch <strong>in/at</strong> a restaurant.</li></ul></ol>"
+    },
+    "PRESENTCONTINUOUS": {
+        "explanation": "<ul><li>Usamos o presente contínuo para coisas que estão acontecendo agora / no momento.</li><li>Também usamos o presente contínuo com períodos mais longos, por exemplo today, this week.<br>I'<strong>m working</strong> at home <strong>this week</strong> because my daughter is not very well.</li></ul>",
+        "explanation1": "<h5>Regras de ortografia para a forma -ing</h5>"
+    },
+    "PRESENTPERFECT": {
+        "title": "<ion-card-title>Be going to (planos)</ion-card-title>",
+        "title1": "<ion-card-title>Be going to (predições)</ion-card-title>",
+        "explanation": "<ul><li>Usamos be going to + verbo (infinitivo) para fazer predições (= dizer o que você pensa ou pode ver vai acontecer no futuro).</li></ul>"
+    },
+    "PRESENTSIMPLE": {
+        "title": "<h6>Formando o tempo presente simples: to think</h6>",
+        "explanation": "<h6>O Presente Simples é usado para <b>descrever hábitos</b>, <b>situações imutáveis</b>, <b>verdades gerais</b>, e <b>arranjos fixos</b>. O tempo presente simples é simples de formar. Basta usar a forma base do verbo: (I take, you take, we take, they take) A terceira pessoa do singular recebe -s no final: he takes, she takes, etc.</h6>",
+        "becareful": "Seja cuidadoso! O presente simples não é usado para expressar ações que estão acontecendo agora.",
+        "examples": "Exemplos",
+        "example1": "<strong>Para hábitos:</strong>",
+        "example2": "<strong>Para ações ou eventos repetidos:</strong>",
+        "example3": "<strong>Para verdades gerais:</strong>",
+        "example4": "<strong>Para arranjos fixos:</strong>",
+        "title2": "<h5>Notas sobre o presente simples, terceira pessoa do singular:</h5>",
+        "explanation1": "<ul><li>Na terceira pessoa do singular, o verbo <strong>sempre termina em -s</strong>: he want<strong>s</strong>, she need<strong>s</strong>, he give<strong>s</strong>, she think<strong>s</strong>.</li><li>Formas negativas e de perguntas usam DOES (= a terceira pessoa do auxiliar 'DO') + o infinitivo do verbo: He wants ice cream. <strong>Does</strong> he want strawberry? He <strong>does</strong> not want vanilla.</li><li>Verbos terminados em <strong>-y</strong>: a terceira pessoa muda o <strong>-y</strong> para <strong>-ies</strong>: fly --> flies, cry --> cries <br><strong>Exceção</strong>: se houver uma vogal antes do -y: play --> plays, pray --> prays</li><li>Adicione <strong>-es</strong> para verbos terminados em: <strong>-ss, -x, -sh, -ch</strong>: he passes, she catches, he fixes, it pushes</li></ul>"
+    },
+    "QUANTIFIERS": {
+        "explanation": "<ul><li>Usamos How much...? com substantivos incontáveis (U) e How many...? substantivos contáveis no plural (C).</li><li>Usamos: <br> a lot (of) com C e U substantivos para uma <strong>grande quantidade.</strong> <br> quite a lot (of) para uma <strong>quantidade média.</strong> <br> a little / not...much com U substantivos para uma <strong>pequena quantidade.</strong> <br> a few / not...many com C substantivos plurais para uma <strong>pequena quantidade.</strong> <br> not...any (none em pequenas respostas) para <strong>quantidade zero.</strong></li></ul>",
+        "explanation2": " <ul><li>Em sentenças [+] geralmente usamos a lot of.</li><li>Em sentenças [-] e [?], geralmente usamos much e many. <br> I don't drink <strong>much</strong> water. <br> Do you drink <strong>much</strong> coffee?</li><li>Também é possível usar a lot of em [-] e [?]: <br> Do you drink <strong>a lot of</strong> coffee? <br> I don't eat <strong>a lot of</strong> vegetables.</li></ul>"
+    },
+    "SUPERLATIVE": {
+        "explanation": "<ul><li>Usamos the + superlative para dizer qual é o (biggest, etc.) em um grupo.</li><li>Depois dos superlativos, usamos in (não of) + lugares, e.g. the world, the class</li></ul>"
+    },
+    "VERBBE": {
+        "explanation": "<ul><li>Sempre use um pronome sujeito (you, he, etc.) com um verbo, exemplo: <b>They</b>'re teachers<br><b>NÃO</b> <s>Are teachers.</s></li><li>Sempre use capital I, exemplo: He's Mike and <b>I</b>'m Sally <b>NÃO</b> <s>i'm Sally.</s></li><li>you = singular e plural.</li><li>Use he para um homem, she para uma mulher e it para uma coisa.</li><li>Use they para pessoas e coisas.</li><li>Usamos contrações na conversa e na escrita informal.</li><li>Em perguntas, coloque o am, are, is <b>antes de</b> I, you, he.</li></ul>"
+    },
+    "VERBSINFINITIVE": {
+        "explanation": "<ul><li>Muitos verbos são seguidos por um verbo no infinitivo com to.</li><li>Esses incluem: want, need, learn, promise, decide, plan and hope.</li></ul>",
+        "explanation1": "<ul><li>I would like to = Eu quero (agora ou no futuro).</li><li><strong>Contrações</strong>: 'd = would; wouldn't = would not.</li><li>Use o infinitivo com to depois would like. <br> I <strong>would like to learn</strong>. <strong>NÃO</strong> <s>I would like learn.</s></li><li>Lembre-se de que você também pode usar Would you like...? para oferecer: <br> <strong>Woukd you like</strong> a drink?</li><li>would you like é o mesmo para todas as pessoas.</li></ul>",
+        "explanation2": "<strong>I'd like</strong> to dance = Eu quero dançar. <br>",
+        "explanation3": "<strong>I like</strong> dancing = Eu gosto disso; Eu gosto em geral."
+    },
+    "WORDORDER": {
+        "explanation": "<ul><li>A ordem das palavras para perguntas no Present Simple com do e does é: <strong>ASI</strong> (<strong>A</strong>uxiliar, <strong>S</strong>ujeito, <strong>I</strong>nfinitivo), e.g. Do you live here? OU <br><strong>QUASI</strong> (<strong>Q</strong>uestão, <strong>A</strong>auxiliar, <strong>S</strong>ujeito, <strong>I</strong>nfinitivo), e.g. Where do you live?;</li><liGeralmente usamos fases de perguntas que começam com What, e.g. What colour...? What size...? What make...? What time...?</li></ul>",
+        "explanation1": "Lembre-se da ordem das palavras nas perguntas com be. Ponha be antes do sujeito. Where are you from? What's your name? Is he Spanish?"
     }
 
 }

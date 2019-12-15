@@ -4,6 +4,12 @@
             <ion-buttons slot="start">
                 <ion-back-button defaultHref="topics-grammar1"></ion-back-button>
             </ion-buttons>
+            <ion-buttons slot="end">
+                <ion-button (click)="openLanguagePopover($event)">
+                    <ion-icon name="more" slot="icon-only">
+                    </ion-icon>
+                </ion-button>
+            </ion-buttons>
         </ion-toolbar>
     </ion-header>
 
@@ -17,7 +23,7 @@
 
                 <div class="card">
                     <div class="card-body ">
-                        <strong>They're having</strong>'re having a party in Flat 4.
+                        <strong>They're having</strong> a party in Flat 4.
                         <br> Oh no! The baby'<strong>s crying.</strong>
                         <br><strong>It's raining.</strong>
                         <br> A: What <strong>are you doing?</strong>
@@ -25,12 +31,7 @@
                     </div>
                 </div>
 
-                <ul>
-                    <li>We use the present continuous for things that are happening now/at the moment.</li>
-                    <li>We also use the present continuous with longer periods of time, e.g. today, this week.
-                        <br>I'<strong>m working</strong> at home <strong>this week</strong> because my daughter is not very well.
-                    </li>
-                </ul>
+                <ion-text [innerHTML]="'PRESENTCONTINUOUS.explanation' | translate"></ion-text>
 
 
                 <table class="table">
@@ -102,7 +103,7 @@
                     </tbody>
                 </table>
 
-                <h5>Spelling rules for the -ing form</h5>
+                <ion-text [innerHTML]="'PRESENTCONTINUOUS.explanation1' | translate"></ion-text>
                 <table class="table table-hover">
                     <thead>
                         <tr>
@@ -130,9 +131,6 @@
                         </tr>
                     </tbody>
                 </table>
-
-
-
             </ion-card>
         </div>
 
