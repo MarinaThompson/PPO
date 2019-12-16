@@ -1,0 +1,139 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="topics-vocabulary1"></ion-back-button>
+        </ion-buttons>
+        <ion-title>The house</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/bathroom.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A bathroom</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bathroomToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/bedroom.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A bedroom</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bedroomToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/dining.jpeg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A dining room</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="diningToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/garage.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A garage</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="garageToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/garden.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A garden</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="gardenToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/hall.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A hall</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="hallToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/kitchen.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A kitchen</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="kitchenToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/living.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A living room</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="livingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/study.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A study</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="studyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/house/toilet.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A toilet</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="toiletToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+
+</ion-content>

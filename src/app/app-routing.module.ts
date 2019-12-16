@@ -130,7 +130,10 @@ const routes: Routes = [
   { path: 'listening-intermediate', loadChildren: './pages/intermediate/listening-intermediate/listening-intermediate.module#ListeningIntermediatePageModule' },
   { path: 'listening-upper-intermediate', loadChildren: './pages/upper-intermediate/listening-upper-intermediate/listening-upper-intermediate.module#ListeningUpperIntermediatePageModule' },
   { path: 'language-popover', loadChildren: './pages/language-popover/language-popover.module#LanguagePopoverPageModule' },
-  { path: 'test-traducao', loadChildren: './pages/test-traducao/test-traducao.module#TestTraducaoPageModule' },
+  { path: 'test-traducao', loadChildren: './pages/test-traducao/test-traducao.module#TestTraducaoPageModule' },  { path: 'places', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/places/places.module#PlacesPageModule' },
+  { path: 'house', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/house/house.module#HousePageModule' },
+  { path: 'family', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/family/family.module#FamilyPageModule' },
+
 
 
 ];

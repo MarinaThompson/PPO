@@ -1,0 +1,332 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="topics-vocabulary1"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Places and buildings</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/bridge.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A bridge</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bridgeToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/busstation.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A bus station</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="busstationToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/carpark.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A car park</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="carparkToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/castle.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A castle</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="castleToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/church.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A church</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="churchToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/department.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A department</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="departmentToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/gallery.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>An art gallery</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="galleryToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/hospital.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A hospital</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="hospitalToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/mall.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A shopping centre / a mall</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mallToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/markert.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A market</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="marketToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/mosque.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A mosque</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mosqueToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/museum.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A museum</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="museumToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/pharmacy.JPG" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A chemist's / a pharmacy</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pharmacyToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/policestation.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A police station</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="policeToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/postoffice.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A post office</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="postToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/railway.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A railway</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="railwayToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/river.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A river</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="riverToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/road.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A road</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="roadToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/square.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A square</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="squareToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/street.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A street</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="streetToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/supermarket.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A supermarket</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="supermarketToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/temple.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A temple</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="templeToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/theatre.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A theatre</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="theatreToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/buildings/townhall.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A town hall</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="townToSpeech(text)">Listen</ion-button>
+                </div>
+
+            </ion-slide>
+
+        </ion-slides>
+    </ion-card>
+
+
+</ion-content>
