@@ -3,7 +3,7 @@ ion-toolbar {
 }
 
 ion-title {
-    margin-left: 30%;
+    margin-left: 10%;
     color: #ffffff;
 }
 
@@ -21,6 +21,11 @@ ion-slide {
     display: block;
 }
 
+ion-footer {
+    height: 50px;
+    background-color: #aa7974;
+}
+
 .slide-img-padding {
     padding: 20px;
     height: 350px;
@@ -30,12 +35,16 @@ ion-slide {
 }
 
 ion-card {
-    margin-top: 10%;
-    height: 450px;
+    margin-top: 2%;
 }
 
 h4 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #775350;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+ion-button {
+    margin-top: -10%;
+    margin-bottom: 5px;
 }

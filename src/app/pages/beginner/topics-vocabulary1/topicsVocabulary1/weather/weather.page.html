@@ -1,0 +1,120 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="topics-vocabulary1"></ion-back-button>
+        </ion-buttons>
+        <ion-title>The weather</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/cloudy.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's cloudy</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cloudyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/cold.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's cold</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="coldToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/foggy.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's foggy</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="foggyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/hot.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's hot</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="hotToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/raining.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's raining</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="rainingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/snowing.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's snowing</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="snowingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/sunny.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's sunny</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sunnyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/weather/windy.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>It's windy</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="windyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+
+
+
+        </ion-slides>
+    </ion-card>
+
+
+</ion-content>

@@ -133,6 +133,7 @@ const routes: Routes = [
   { path: 'test-traducao', loadChildren: './pages/test-traducao/test-traducao.module#TestTraducaoPageModule' },  { path: 'places', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/places/places.module#PlacesPageModule' },
   { path: 'house', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/house/house.module#HousePageModule' },
   { path: 'family', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/family/family.module#FamilyPageModule' },
+  { path: 'weather', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/weather/weather.module#WeatherPageModule' },
 
 
 
