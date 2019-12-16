@@ -10,20 +10,100 @@
 <ion-content>
 
     <ion-card>
-        <ion-slides pager="true" [options]="slideOptsOne">
+        <ion-slides pager="false" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/northAmerica.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b><b>North America</b></b>
+                    </h4> <br>
+                    <h5>Is a large continent in the Northern and Western Hemispheres of Earth. It is to the east of the Pacific Ocean, the west of the Atlantic Ocean, the south of the Arctic Ocean, and it is the northern part of the Americas.</h5>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
-                </div>
-                <div>
-                    <h4 [innerHTML]="slide.resumo"></h4>
+                    <ion-button (click)="northAmericaToSpeech(text)">Listen</ion-button>
                 </div>
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/southAmerica.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>South America</b></h4> <br>
+                    <h5>Is the continent to the south of North America. These two continents are separated by the Panama Canal.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="southAmericaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/asia.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>Asia</b></h4> <br>
+                    <h5>Asia is the largest continent on Earth. It is in the northern hemisphere. Asia is connected to Europe in the west. Together, Asia and Europe are called Eurasia.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="asiaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/antartica.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>Antarctica</b></h4> <br>
+                    <h5>Is the Earth´s southernmost continent.It is on the South Pole.It is almost entirely south of the Antarctic Circle. Around Antarctica is the Southern Ocean.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="antarcticaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/africa.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>Africa</b></h4> <br>
+                    <h5>Is the second largest continent in the world. It makes up about a fifth of the world´s land. It is surrounded by large areas of water.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="africaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/europe.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>Europe</b></h4> <br>
+                    <h5>Is the western part of the continent of Eurasia, sometimes regarded as a continent in its own right. It is separated from Asia by the Ural Mountains in Russia and the Bosporus strait in Turkey.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="europeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/continents/oceania.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4><b>Oceania</b></h4> <br>
+                    <h5>Oceania is a name used in geography for the region made up of Australia, New Zealand, New Guinea, and several other island nations in the surrounding area. Some people call this part of the world Australasia instead.</h5>
+                </div>
+                <div>
+                    <ion-button (click)="oceaniaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
         </ion-slides>
     </ion-card>
 

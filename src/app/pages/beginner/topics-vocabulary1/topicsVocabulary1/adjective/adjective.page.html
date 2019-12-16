@@ -12,32 +12,251 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/bad.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bad</h4> <br>
+                    <h5>The opposite: Good</h5>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
-                </div>
-                <div>
-                    <h6 [innerHTML]="slide.fonetica"></h6>
-                </div>
-                <div>
-                    <h4 [innerHTML]="slide.opposite"></h4>
+                    <ion-button (click)="badToSpeech(text)">Listen</ion-button>
                 </div>
             </ion-slide>
-        </ion-slides>
 
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/big.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Big</h4> <br>
+                    <h5>The opposite: Small</h5>
+                </div>
+                <div>
+                    <ion-button (click)="bigToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/dangerous.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Dangerous</h4> <br>
+                    <h5>The opposite: Safe</h5>
+                </div>
+                <div>
+                    <ion-button (click)="safeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/dirty.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Dirty</h4> <br>
+                    <h5>The opposite: Clean</h5>
+                </div>
+                <div>
+                    <ion-button (click)="dirtyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/empty.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Empty</h4> <br>
+                    <h5>The opposite: Full</h5>
+                </div>
+                <div>
+                    <ion-button (click)="emptyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/expensive.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Expensive</h4> <br>
+                    <h5>The opposite: Cheap</h5>
+                </div>
+                <div>
+                    <ion-button (click)="cheapToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/far.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Far</h4> <br>
+                    <h5>The opposite: Near</h5>
+                </div>
+                <div>
+                    <ion-button (click)="farToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/fast.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fast</h4> <br>
+                    <h5>The opposite: Slow</h5>
+                </div>
+                <div>
+                    <ion-button (click)="fastToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/high.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>High</h4> <br>
+                    <h5>The opposite: Low</h5>
+                </div>
+                <div>
+                    <ion-button (click)="highToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/hot.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Hot</h4> <br>
+                    <h5>The opposite: Cold</h5>
+                </div>
+                <div>
+                    <ion-button (click)="hotToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/olld.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Old</h4> <br>
+                    <h5>The opposite: New</h5>
+                </div>
+                <div>
+                    <ion-button (click)="oldToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/rich.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Rich</h4> <br>
+                    <h5>The opposite: Poor</h5>
+                </div>
+                <div>
+                    <ion-button (click)="richToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/strong.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Strong</h4> <br>
+                    <h5>The opposite: Weak</h5>
+                </div>
+                <div>
+                    <ion-button (click)="strongToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/wrong.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Wrong</h4> <br>
+                    <h5>The opposite: Right</h5>
+                </div>
+                <div>
+                    <ion-button (click)="wrongToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/blond.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Blond</h4> <br>
+                    <h5>The opposite: Dark</h5>
+                </div>
+                <div>
+                    <ion-button (click)="darkToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/beautiful.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Beautiful</h4> <br>
+                    <h5>The opposite: Ugly</h5>
+                </div>
+                <div>
+                    <ion-button (click)="uglyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/fat.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fat</h4> <br>
+                    <h5>The opposite: Thin</h5>
+                </div>
+                <div>
+                    <ion-button (click)="fatToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/old.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Old</h4> <br>
+                    <h5>The opposite: Young</h5>
+                </div>
+                <div>
+                    <ion-button (click)="youngToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/adjectives/tall.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tall</h4> <br>
+                    <h5>The opposite: Short</h5>
+                </div>
+                <div>
+                    <ion-button (click)="tallToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
     </ion-card>
-
-    <footer>
-        <ion-list>
-            <ion-item *ngFor="let track of playlist" (click)="start(track)">
-                <ion-label>
-                    {{ track.name }}
-                </ion-label>
-            </ion-item>
-        </ion-list>
-    </footer>
 </ion-content>

@@ -3,7 +3,7 @@
         <ion-buttons slot="start">
             <ion-back-button defaultHref="topics-vocabulary1"></ion-back-button>
         </ion-buttons>
-        <ion-title>Things</ion-title>
+        <ion-title>Places and buildings</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -12,21 +12,321 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/book.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A book</h4> <br>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
-                </div>
-                <div>
-                    <h6 [innerHTML]="slide.fonetica"></h6>
-                </div>
-                <div>
-                    <h4 [innerHTML]="slide.example"></h4>
+                    <ion-button (click)="bookToSpeech(text)">Listen</ion-button>
                 </div>
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/coin.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A coin</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="coinToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/creditCard.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A credit card</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="creditToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/diactionary.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A dictionary</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="dictionaryToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/diary.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A diary</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="diaryToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/glasses.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Glasses</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="glassesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/headphones.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Headphones</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="headphonesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/identity.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>An identity card</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="identityToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/iPod.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>An iPod</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="iPodToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/key.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A key</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="keyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/laptop.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A laptop</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="laptopToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/magazine.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A magazine</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="magazineToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/mobile.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A mobile (phone)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mobileToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/newspaper.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A newspaper</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="newspaperToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/photp.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A photo</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="photoToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/piecePaper.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A piece of paper</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="paperToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+
+                <div class="img">
+                    <img src="/assets/img/things/purse.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A purse</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="purseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/scissors.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A scissors</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="scissorsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/stamp.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A stamp</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="stampToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/sunglasses.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sunglasses</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sunglassesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/umbrella.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>An umbrella</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="umbrellaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/wallet1.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A wallet</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="walletToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/pen.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A pen</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="penToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/pencil.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A pencil</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pencilToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/watch.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A watch</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="watchToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/things/ticket.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>A ticket</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="ticketToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+
         </ion-slides>
     </ion-card>
 

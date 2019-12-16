@@ -12,21 +12,475 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/bread.jpeg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bread</h4> <br>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
-                </div>
-                <div>
-                    <h6 [innerHTML]="slide.fonetica"></h6>
-                </div>
-                <div>
-                    <h4 [innerHTML]="slide.example"></h4>
+                    <ion-button (click)="breadToSpeech(text)">Listen</ion-button>
                 </div>
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/butter.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Butter</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="butterToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/cereal.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Cereal</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cerealToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/cheese.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Cheese</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cheeseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/coffee.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Coffee</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="coffeeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/eggs.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Eggs</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="eggsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/jam.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Jam</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="jamToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/juice.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>(orange) Juice</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="juiceToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/milk.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Milk</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="milkToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/sugar.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sugar</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sugarToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/tea.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tea</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="teaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/toast.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Toast</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="toastToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/fish.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fish</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="fishToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/meat.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Meat</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="meatToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/oil.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>(olive) Oil</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="oilToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/pasta.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Pasta</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pastaToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/rice.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Rice</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="riceToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/salad.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Salad</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="saladToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/carrots.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Carrots</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="carrotsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/fries.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Chips (French fries)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="chipsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/lettuce.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Lettuce</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="lettuceToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/mushrooms.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Mushrooms</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mushroomsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/onions.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Onions</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="onionsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/peas.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Peas</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="peasToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/potatos.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Potatoes</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="potatoesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/tomatoes.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tomatoes</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tomatoesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/apples.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Apples</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="applesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/bananas.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bananas</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bananasToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/oranges.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Oranges</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="orangesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/pineapple.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Pineapple</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pineappleToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/strawberries.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Strawberries</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="strawberriesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/cake.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Cake</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cakeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/fruitSalad.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fruit salad</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="fruitToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/iceCream.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Ice cream</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="icecreamToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/biscuits.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Biscuits</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="biscuitsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/chocolate.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Chocolate</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="chocolateToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/crisps.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Crips</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cripsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/sandwiches.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sandwiches</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sandwichesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/food/sweets.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sweets</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sweetsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
         </ion-slides>
     </ion-card>
 
