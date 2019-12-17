@@ -142,9 +142,6 @@ export class ListeningBeginnerPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-
-
-
   ngOnInit() { }
 
 

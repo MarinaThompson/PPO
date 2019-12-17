@@ -15,25 +15,25 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <img src="/assets/img/activities/watchTV.png">
-                    <h6>What is this boy doing?</h6>
+                    <img src="/assets/img/house/bathroom.jpg">
+                    <h6>What is the name of this part of the house?</h6>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">watching Tv</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">bathroom</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">reading a <br> book</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">bedroom</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">having a <br> breakfast</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">garage</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">doing his <br> homework</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">kitchen</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -43,53 +43,25 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <img src="/assets/img/things/wallet1.jpg">
+                    <img src="/assets/img/food/jam.png">
                     <h6>What is it?</h6>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">umbrella</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">egg</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">stamp</ion-button>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">scissors</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">wallet</ion-button>
-                            </ion-col>
-                        </ion-row>
-                    </ion-grid>
-                </div>
-            </ion-slide>
-
-            <ion-slide>
-                <div class="slide-inner ion-padding">
-
-                    <img src="/assets/img/things/umbrella.jpg">
-                    <h6>What is it?</h6>
-
-                    <ion-grid>
-                        <ion-row>
-                            <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">pencil</ion-button>
-                            </ion-col>
-                            <ion-col size="6">
-                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">umbrella</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">jam</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">watch</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">bread</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">photo</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">sugar</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -99,29 +71,57 @@
             <ion-slide>
                 <div class="slide-inner ion-padding">
 
-                    <h5>Which days are part of the weekend?</h5>
+                    <img src="/assets/img/weather/snowing.jpg">
+                    <h6>How is the weather in the picture?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">It's raining</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">It's sunny</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">It's cold</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">It's snowing</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>What is the first day of the week?</h5>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="12">
-                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Wednesday and Tuesday</ion-button>
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Tuesday</ion-button>
                             </ion-col>
                         </ion-row>
                         <ion-row>
                             <ion-col size="12">
-                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">Saturday and Sunday</ion-button>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row>
-                            <ion-col size="12">
-                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Friday and Saturday</ion-button>
+                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">Sunday</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="12">
-                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Sunday and Monday</ion-button>
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Saturday</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Monday</ion-button>
                             </ion-col>
                         </ion-row>
 
@@ -158,25 +158,25 @@
             <ion-slide>
                 <div class="slide-inner ion-padding ">
 
-                    <img src="/assets/img/job/hairdresser.jpg">
-                    <h6>What is the woman's profession in the picture?</h6>
+                    <img src="/assets/img/buildings/church.jpg">
+                    <h6>Where is this?</h6>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6 ">
-                                <ion-button color="primary" (click)="wrongAlert()">musician</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">mall</ion-button>
                             </ion-col>
                             <ion-col size="6 ">
-                                <ion-button color="primary" (click)="wrongAlert()">model</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">department</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6 ">
-                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">hairdresser</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">art gallery</ion-button>
                             </ion-col>
                             <ion-col size="6 ">
-                                <ion-button color="primary" (click)="wrongAlert()">nurse</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">church</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -185,25 +185,25 @@
             <ion-slide>
                 <div class="slide-inner ion-padding ">
 
-                    <img src="/assets/img/activities/shower.jpg">
-                    <h6>What is this girl doing?</h6>
+                    <img src="/assets/img/things/diactionary.jpg">
+                    <h6>What is this?</h6>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">getting <br> dressed</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">a dictionary</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">taking <br> a shower</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">a diary</ion-button>
                             </ion-col>
                         </ion-row>
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">having <br> breakfast</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">a key</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="wrongAlert()">doing the <br> housework</ion-button>
+                                <ion-button color="primary" (click)="wrongAlert()">a magazine</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>
@@ -212,13 +212,13 @@
             <ion-slide>
                 <div class="slide-inner ion-padding ">
 
-                    <img src="/assets/img/activities/coffee.jpg">
-                    <h6>What is this girl doing?</h6>
+                    <img src="/assets/img/activities/lunch.jpg">
+                    <h6>What is this boy doing?</h6>
 
                     <ion-grid>
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="acerto()" (click)="showResult()">having a coffee</ion-button>
+                                <ion-button color="primary" (click)="acerto()" (click)="showResult()">having lunch</ion-button>
                             </ion-col>
                             <ion-col size="6">
                                 <ion-button color="primary" (click)="showResult()">watching tv</ion-button>
@@ -227,10 +227,10 @@
 
                         <ion-row>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="showResult()">doing exercise</ion-button>
+                                <ion-button color="primary" (click)="showResult()">doing <br> exercise</ion-button>
                             </ion-col>
                             <ion-col size="6">
-                                <ion-button color="primary" (click)="showResult()">waking up</ion-button>
+                                <ion-button color="primary" (click)="showResult()">having <br> breakfast</ion-button>
                             </ion-col>
                         </ion-row>
                     </ion-grid>

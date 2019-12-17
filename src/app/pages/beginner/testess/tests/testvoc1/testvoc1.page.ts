@@ -2,15 +2,14 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides, ToastController } from '@ionic/angular';
 import { User } from '../../../../../interfaces/user';
 import { AlertController, ActionSheetController } from '@ionic/angular';
-import { Router } from '@angular/router'
-
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-testvoc',
-  templateUrl: './testvoc.page.html',
-  styleUrls: ['./testvoc.page.scss'],
+  selector: 'app-testvoc1',
+  templateUrl: './testvoc1.page.html',
+  styleUrls: ['./testvoc1.page.scss'],
 })
-export class TestvocPage implements OnInit {
+export class Testvoc1Page implements OnInit {
 
   @ViewChild(IonSlides) slides: IonSlides;
 

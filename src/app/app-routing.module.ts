@@ -134,6 +134,9 @@ const routes: Routes = [
   { path: 'house', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/house/house.module#HousePageModule' },
   { path: 'family', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/family/family.module#FamilyPageModule' },
   { path: 'weather', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/weather/weather.module#WeatherPageModule' },
+  { path: 'teste2', loadChildren: './pages/beginner/testess/tests/teste2/teste2.module#Teste2PageModule' },
+  { path: 'testvoc1', loadChildren: './pages/beginner/testess/tests/testvoc1/testvoc1.module#Testvoc1PageModule' },
+  { path: 'test-listening2', loadChildren: './pages/beginner/testess/tests/test-listening2/test-listening2.module#TestListening2PageModule' },
 
 
 

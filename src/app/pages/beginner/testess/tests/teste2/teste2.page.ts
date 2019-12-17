@@ -1,16 +1,15 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides, ToastController } from '@ionic/angular';
-import { User } from '../../../../../interfaces/user';
-import { AlertController, ActionSheetController } from '@ionic/angular';
+import { NavController } from '@ionic/angular';
+import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router'
 
-
 @Component({
-  selector: 'app-testvoc',
-  templateUrl: './testvoc.page.html',
-  styleUrls: ['./testvoc.page.scss'],
+  selector: 'app-teste2',
+  templateUrl: './teste2.page.html',
+  styleUrls: ['./teste2.page.scss'],
 })
-export class TestvocPage implements OnInit {
+export class Teste2Page implements OnInit {
 
   @ViewChild(IonSlides) slides: IonSlides;
 
@@ -19,8 +18,8 @@ export class TestvocPage implements OnInit {
 
   constructor(
     private toastCtrl: ToastController,
-    private alertController: AlertController,
-    private actionSheet: ActionSheetController,
+    private navCtrl: NavController,
+    private alertCtrl: AlertController,
     private _Router: Router
   ) { }
 
@@ -29,9 +28,8 @@ export class TestvocPage implements OnInit {
     console.log(this.score);
   }
 
-
   async presentAlert() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       header: 'Congratulations!',
       message: 'You got this question right!',
       backdropDismiss: false,
@@ -49,7 +47,7 @@ export class TestvocPage implements OnInit {
   }
 
   async wrongAlert() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       header: 'Opss...!',
       message: 'You didn´t hit this question!',
       backdropDismiss: false,
@@ -66,15 +64,14 @@ export class TestvocPage implements OnInit {
     await alert.present();
   }
 
-
   async badAlert() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       header: 'Opss...',
       subHeader: 'Total de acertos: ' + this.score,
       message: 'You should study a bit more!',
       buttons: [
         {
-          text: 'Fechar',
+          text: 'Voltar',
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
@@ -88,7 +85,7 @@ export class TestvocPage implements OnInit {
   }
 
   async goodAlert() {
-    const alert = await this.alertController.create({
+    const alert = await this.alertCtrl.create({
       header: 'Parabéns!',
       subHeader: 'Total de acertos: ' + this.score,
       message: 'Keep in this way!',
@@ -119,7 +116,6 @@ export class TestvocPage implements OnInit {
     }
 
   }
-
 
   ngOnInit() {
   }
