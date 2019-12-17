@@ -1,15 +1,14 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { IonSlides, ToastController } from '@ionic/angular';
-import { NavController } from '@ionic/angular';
-import { AlertController } from '@ionic/angular';
+import { AlertController, ActionSheetController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-teste4',
-  templateUrl: './teste4.page.html',
-  styleUrls: ['./teste4.page.scss'],
+  selector: 'app-testvoc3',
+  templateUrl: './testvoc3.page.html',
+  styleUrls: ['./testvoc3.page.scss'],
 })
-export class Teste4Page implements OnInit {
+export class Testvoc3Page implements OnInit {
 
   @ViewChild(IonSlides) slides: IonSlides;
 
@@ -18,8 +17,8 @@ export class Teste4Page implements OnInit {
 
   constructor(
     private toastCtrl: ToastController,
-    private navCtrl: NavController,
-    private alertCtrl: AlertController,
+    private alertController: AlertController,
+    private actionSheet: ActionSheetController,
     private _Router: Router
   ) { }
 
@@ -28,8 +27,9 @@ export class Teste4Page implements OnInit {
     console.log(this.score);
   }
 
+
   async presentAlert() {
-    const alert = await this.alertCtrl.create({
+    const alert = await this.alertController.create({
       header: 'Congratulations!',
       message: 'You got this question right!',
       backdropDismiss: false,
@@ -47,7 +47,7 @@ export class Teste4Page implements OnInit {
   }
 
   async wrongAlert() {
-    const alert = await this.alertCtrl.create({
+    const alert = await this.alertController.create({
       header: 'Opss...!',
       message: 'You didn´t hit this question!',
       backdropDismiss: false,
@@ -64,14 +64,15 @@ export class Teste4Page implements OnInit {
     await alert.present();
   }
 
+
   async badAlert() {
-    const alert = await this.alertCtrl.create({
+    const alert = await this.alertController.create({
       header: 'Opss...',
       subHeader: 'Total de acertos: ' + this.score,
       message: 'You should study a bit more!',
       buttons: [
         {
-          text: 'Voltar',
+          text: 'Fechar',
           role: 'cancel',
           cssClass: 'secondary',
           handler: () => {
@@ -85,7 +86,7 @@ export class Teste4Page implements OnInit {
   }
 
   async goodAlert() {
-    const alert = await this.alertCtrl.create({
+    const alert = await this.alertController.create({
       header: 'Parabéns!',
       subHeader: 'Total de acertos: ' + this.score,
       message: 'Keep in this way!',
@@ -106,11 +107,11 @@ export class Teste4Page implements OnInit {
 
 
   showResult(presentAlert) {
-    if (this.score <= 3) {
+    if (this.score <= 5) {
       this.badAlert();
       console.log("You should study a bit more!")
     }
-    else if (this.score > 4) {
+    else if (this.score >= 6) {
       this.goodAlert();
       console.log("Keep in this way!")
     }

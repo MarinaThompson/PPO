@@ -1,0 +1,259 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="tests2-list"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Teste vocabulário</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="swiper-no-swiping">
+
+
+        <ion-slides>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/animal/cow.jfif">
+                    <h6>What's the name of this animal?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">cow</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">lion</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">bull</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">monkey</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/thingsWear/skirt.jpg">
+                    <h6>What is it?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">cardigan</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">skirt</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">dress</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">belt</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/housework/cleanFloor.jfif">
+                    <h6>What is this person doing?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Do washing</ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Do ironing</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">Cleaning the floor</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">Take out the rubbish</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>A person who can't talk easily to people he/she doesn't know is...</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">friendly</ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">generous</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">shy</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">stupid</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/appearance/straight.jpg">
+                    <h6>What does he look like?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">He is quite short and a bit overweight</ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">He is very tall and thin</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">He's medium height and quite slim</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">He is bald</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/thingsWear/suit.jpg">
+                    <h6>What is this?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">jeans</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">shirt</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="wrongAlert()">T-shirt</ion-button>
+                            </ion-col>
+                            <ion-col size="6 ">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">suit</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+
+                    <h6>The opposite of serious is...</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">stupid</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">quite</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">funny</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">nice</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding ">
+
+                    <img src="/assets/img/housework/doIroning.jfif">
+                    <h6>What is this woman doing?</h6>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">She is doing shopping</ion-button>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">She is doing ironing</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">She is making lunch</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="12">
+                                <ion-button expand="full" color="primary" (click)="wrongAlert()">She taking out the rubbish</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                    </ion-grid>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </ion-content>
+</ion-app>

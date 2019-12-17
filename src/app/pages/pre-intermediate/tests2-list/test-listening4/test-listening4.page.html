@@ -1,0 +1,117 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tests2-list"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Test listening</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="swiper-no-swiping">
+
+    <ion-slides>
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and choose the option you heard</h5>
+                    <button ion-button (click)="listenToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">How long do you go to stay in Italy?</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">How long are you going to stay in Italy?</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">How long you are going to stay in Italy?</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">How long did you go to stay in Italy?</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and choose the option you heard</h5>
+                    <button ion-button (click)="listen1ToSpeech(text)">Listen</button>
+                </div>
+                <div>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I think it's going rain tonight</ion-button> <br>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I think it's goes to rain tonight</ion-button> <br>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I think it going rain tonight</ion-button> <br>
+
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">I think it's going to rain tonight</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and choose the option you heard</h5>
+                    <button ion-button (click)="listen2ToSpeech(text)">Listen</button>
+                </div>
+                <div>
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">They aren't going to get married until next year</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">They don't go to get married until next year</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">They not going to get married until next year</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">They didn't go to get married until next year</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and choose the option you heard</h5>
+                    <button ion-button (click)="listen3ToSpeech(text)">Listen</button>
+                </div>
+                <div>
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">You haven't spent time enough on your homework</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">You haven't spent enough time on your homework</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">You haven't spent many time on your homework</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">You haven't spent much time on your homework</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and choose the option you heard</h5>
+                    <button ion-button (click)="listen4ToSpeech(text)">Listen</button>
+                </div>
+
+                <div>
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="showResult()">He's the man who lives next door to Alice</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="showResult()">He's the man which lives next door to Alice</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="showResult()">He's the man that lives next door to Alice</ion-button>
+
+                    <ion-button expand="full" color="primary" (click)="showResult()">He's the man where lives next door to Alice</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+
+
+    </ion-slides>
+
+</ion-content>

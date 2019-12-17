@@ -1,9 +1,178 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>teste4</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="tests2-list"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Practise teste</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-<ion-content>
+    <ion-content class="swiper-no-swiping">
 
-</ion-content>
+
+        <ion-slides>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>A postman is the person ____ brings you your letters</h5>
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">who</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">which</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">whose</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">that</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+
+
+
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>That’s the restaurant _____ I had dinner last week </h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">which</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">whose</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">where</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">who</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>I called him, ____ his mobile was turned off</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">but</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">although</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary">because</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">so</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>What _____ you _____ at 7:30 last night?</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">did / doing</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">was / do</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">do / doing</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">were / doing</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>You eat _____ red meat. It isn’t good for you.</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">many</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">too many</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">too much</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">much</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <h5>I _______ the newspaper today (not read)</h5>
+
+                    <ion-grid>
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">have read</ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="acerto()" (click)="presentAlert()">haven’t read</ion-button>
+                            </ion-col>
+                        </ion-row>
+
+                        <ion-row>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">haven’t readed </ion-button>
+                            </ion-col>
+                            <ion-col size="6">
+                                <ion-button color="primary" (click)="wrongAlert()">hasn’t read</ion-button>
+                            </ion-col>
+                        </ion-row>
+                    </ion-grid>
+                </div>
+            </ion-slide>
+
+        </ion-slides>
+    </ion-content>
+</ion-app>

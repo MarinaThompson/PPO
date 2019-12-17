@@ -1,0 +1,27 @@
+ion-toolbar {
+    --ion-background-color: #aa7974;
+    text-align: center;
+}
+
+ion-title {
+    margin-left: -13%;
+}
+
+ion-content {
+    h5 {
+        margin-top: 5%;
+    }
+    ion-button {
+        height: 100px;
+        min-width: 150px;
+    }
+    button {
+        background-color: #aa7974;
+        color: white;
+        margin-left: 43%;
+    }
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}

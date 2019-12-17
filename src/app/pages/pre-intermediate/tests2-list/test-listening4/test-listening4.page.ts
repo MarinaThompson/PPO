@@ -1,27 +1,23 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 import { IonSlides, ToastController } from '@ionic/angular';
 import { NavController } from '@ionic/angular';
 import { AlertController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-teste4',
-  templateUrl: './teste4.page.html',
-  styleUrls: ['./teste4.page.scss'],
+  selector: 'app-test-listening4',
+  templateUrl: './test-listening4.page.html',
+  styleUrls: ['./test-listening4.page.scss'],
 })
-export class Teste4Page implements OnInit {
+export class TestListening4Page implements OnInit {
 
   @ViewChild(IonSlides) slides: IonSlides;
 
   score: number = 0;
   slideOptions: any;
 
-  constructor(
-    private toastCtrl: ToastController,
-    private navCtrl: NavController,
-    private alertCtrl: AlertController,
-    private _Router: Router
-  ) { }
+  constructor(private tts: TextToSpeech, private toastCtrl: ToastController, private navCtrl: NavController, private alertCtrl: AlertController, private _Router: Router) { }
 
   acerto() {
     this.score++;
@@ -110,12 +106,63 @@ export class Teste4Page implements OnInit {
       this.badAlert();
       console.log("You should study a bit more!")
     }
-    else if (this.score > 4) {
+    else if (this.score >= 4) {
       this.goodAlert();
       console.log("Keep in this way!")
     }
 
   }
+
+  listenToSpeech(text) {
+    this.tts.speak({
+      text: "How long are you going to stay in Italy?",
+      locale: 'en-US',
+      rate: 0.80
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  listen1ToSpeech(text) {
+    this.tts.speak({
+      text: "I think it's going to rain tonight",
+      locale: 'en-US',
+      rate: 0.80
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  listen2ToSpeech(text) {
+    this.tts.speak({
+      text: "They aren't going to get married until next year",
+      locale: 'en-US',
+      rate: 0.80
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  listen3ToSpeech(text) {
+    this.tts.speak({
+      text: "You haven't spent enough time on your homework",
+      locale: 'en-US',
+      rate: 0.80
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  listen4ToSpeech(text) {
+    this.tts.speak({
+      text: "He's the man who lives next door to Alice",
+      locale: 'en-US',
+      rate: 0.80
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
 
   ngOnInit() {
   }
