@@ -143,6 +143,7 @@ const routes: Routes = [
   { path: 'things-wear', loadChildren: './pages/pre-intermediate/vocabulary-list/things-wear/things-wear.module#ThingsWearPageModule' },
   { path: 'tests2-list', loadChildren: './pages/pre-intermediate/tests2-list/tests2-list.module#Tests2ListPageModule' },
   { path: 'teste3', loadChildren: './pages/pre-intermediate/tests2-list/teste3/teste3.module#Teste3PageModule' },
+  { path: 'teste4', loadChildren: './pages/pre-intermediate/tests2-list/teste4/teste4.module#Teste4PageModule' },
 
 
 

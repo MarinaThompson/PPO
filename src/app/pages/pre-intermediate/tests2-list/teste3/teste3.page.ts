@@ -105,11 +105,11 @@ export class Teste3Page implements OnInit {
 
 
   showResult(presentAlert) {
-    if (this.score <= 6) {
+    if (this.score <= 3) {
       this.badAlert();
       console.log("You should study a bit more!")
     }
-    else if (this.score >= 7) {
+    else if (this.score > 4) {
       this.goodAlert();
       console.log("Keep in this way!")
     }
