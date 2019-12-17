@@ -148,6 +148,8 @@ const routes: Routes = [
   { path: 'testvoc3', loadChildren: './pages/pre-intermediate/tests2-list/testvoc3/testvoc3.module#Testvoc3PageModule' },
   { path: 'test-listening3', loadChildren: './pages/pre-intermediate/tests2-list/test-listening3/test-listening3.module#TestListening3PageModule' },
   { path: 'test-listening4', loadChildren: './pages/pre-intermediate/tests2-list/test-listening4/test-listening4.module#TestListening4PageModule' },
+  { path: 'vocabulary-intermediate', loadChildren: './pages/intermediate/vocabulary-intermediate/vocabulary-intermediate.module#VocabularyIntermediatePageModule' },
+  { path: 'food1', loadChildren: './pages/intermediate/vocabulary-intermediate/food1/food1.module#Food1PageModule' },
 
 
 

@@ -39,13 +39,13 @@
                     <h5>Click the button to listen and choose the option you heard</h5>
                     <button ion-button (click)="listen1ToSpeech(text)">Listen</button>
                 </div>
+                <br>
                 <div>
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I have 14 years</ion-button>
 
-                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I have 14 years</ion-button> <br>
+                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">I'm 40 years old</ion-button>
 
-                    <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">I'm 40 years old</ion-button> <br>
-
-                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I have 40 years old</ion-button> <br>
+                    <ion-button expand="full" color="primary" (click)="wrongAlert()">I have 40 years old</ion-button>
 
                     <ion-button expand="full" color="primary" (click)="wrongAlert()">I'm 14 years old</ion-button>
                 </div>
@@ -59,6 +59,7 @@
                     <h5>Click the button to listen and choose the option you heard</h5>
                     <button ion-button (click)="listen2ToSpeech(text)">Listen</button>
                 </div>
+                <br>
                 <div>
                     <ion-button expand="full" color="primary" (click)="acerto()" (click)="presentAlert()">I'm from <br> Canada</ion-button>
 
@@ -78,6 +79,7 @@
                     <h5>Click the button to listen and choose the option you heard</h5>
                     <button ion-button (click)="listen3ToSpeech(text)">Listen</button>
                 </div>
+                <br>
                 <div>
                     <ion-button expand="full" color="primary" (click)="wrongAlert()">I have one sister <br> and two brother</ion-button>
 
@@ -97,7 +99,7 @@
                     <h5>Click the button to listen and choose the option you heard</h5>
                     <button ion-button (click)="listen4ToSpeech(text)">Listen</button>
                 </div>
-
+                <br>
                 <div>
                     <ion-button expand="full" color="primary" (click)="showResult()">It isn't OK</ion-button>
 
