@@ -1,0 +1,259 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-intermediate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>The body</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/arms.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Arms</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="armsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/back.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Back</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="backToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/ears.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Ears</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="earsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/eyes.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Eyes</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="eyesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/face.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Face</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="faceToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/feet.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Feet <br> (singular foor)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="feetToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/fingers.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fingers</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="fingersToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/hands.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Hands</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="handsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/head.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Head</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="headToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/knees.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Knees</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="kneesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/legs.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Legs</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="legsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/lips.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Lips</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="lipsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/mouth.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Mouth</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mouthToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/neck.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Neck</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="neckToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/nose.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Nose</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="noseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/shoulders.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Shoulders</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="shouldersToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/stomach.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Stomach</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="stomachToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/teeth.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Teeth</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="teethToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/toes.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Toes</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="toesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/body/tongue.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tongue</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tongueToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+    <footer>
+    </footer>
+</ion-content>

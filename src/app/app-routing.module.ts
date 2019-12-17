@@ -150,6 +150,7 @@ const routes: Routes = [
   { path: 'test-listening4', loadChildren: './pages/pre-intermediate/tests2-list/test-listening4/test-listening4.module#TestListening4PageModule' },
   { path: 'vocabulary-intermediate', loadChildren: './pages/intermediate/vocabulary-intermediate/vocabulary-intermediate.module#VocabularyIntermediatePageModule' },
   { path: 'food1', loadChildren: './pages/intermediate/vocabulary-intermediate/food1/food1.module#Food1PageModule' },
+  { path: 'the-body', loadChildren: './pages/intermediate/vocabulary-intermediate/the-body/the-body.module#TheBodyPageModule' },
 
 
 
