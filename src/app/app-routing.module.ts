@@ -153,6 +153,8 @@ const routes: Routes = [
   { path: 'the-body', loadChildren: './pages/intermediate/vocabulary-intermediate/the-body/the-body.module#TheBodyPageModule' },
   { path: 'relationship', loadChildren: './pages/intermediate/vocabulary-intermediate/relationship/relationship.module#RelationshipPageModule' },
   { path: 'cinema', loadChildren: './pages/intermediate/vocabulary-intermediate/cinema/cinema.module#CinemaPageModule' },
+  { path: 'personality1', loadChildren: './pages/intermediate/vocabulary-intermediate/personality1/personality1.module#Personality1PageModule' },
+  { path: 'transport', loadChildren: './pages/intermediate/vocabulary-intermediate/transport/transport.module#TransportPageModule' },
 
 
 

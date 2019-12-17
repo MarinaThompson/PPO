@@ -1,0 +1,117 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-intermediate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Transport</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/carriage.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Carriage</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="carriageToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/coach.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Coach</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="coachToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/lorry.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Lorry</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="lorryToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/motorway.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Motor way</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="motorToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/platform.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Platform</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="platformToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/scooter.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Scooter</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="scooterToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/tram.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tram</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tramToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/transport/van.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Van</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="vanToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+        </ion-slides>
+    </ion-card>
+
+    <footer>
+    </footer>
+</ion-content>
