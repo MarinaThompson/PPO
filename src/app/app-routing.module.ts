@@ -137,6 +137,12 @@ const routes: Routes = [
   { path: 'teste2', loadChildren: './pages/beginner/testess/tests/teste2/teste2.module#Teste2PageModule' },
   { path: 'testvoc1', loadChildren: './pages/beginner/testess/tests/testvoc1/testvoc1.module#Testvoc1PageModule' },
   { path: 'test-listening2', loadChildren: './pages/beginner/testess/tests/test-listening2/test-listening2.module#TestListening2PageModule' },
+  { path: 'confusing', loadChildren: './pages/pre-intermediate/vocabulary-list/confusing/confusing.module#ConfusingPageModule' },
+  { path: 'appearance', loadChildren: './pages/pre-intermediate/vocabulary-list/appearance/appearance.module#AppearancePageModule' },
+  { path: 'personality', loadChildren: './pages/pre-intermediate/vocabulary-list/personality/personality.module#PersonalityPageModule' },
+  { path: 'things-wear', loadChildren: './pages/pre-intermediate/vocabulary-list/things-wear/things-wear.module#ThingsWearPageModule' },
+  { path: 'tests2-list', loadChildren: './pages/pre-intermediate/tests2-list/tests2-list.module#Tests2ListPageModule' },
+  { path: 'teste3', loadChildren: './pages/pre-intermediate/tests2-list/teste3/teste3.module#Teste3PageModule' },
 
 
 

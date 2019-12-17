@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 
 @Component({
   selector: 'app-expressing-movement',
@@ -20,69 +21,126 @@ export class ExpressingMovementPage implements OnInit {
   };
 
 
-  constructor() {
-    this.slides = [
-      {
-        id: 1,
-        img: '/assets/img/expressingMovement/across.jpg',
-        titulo: 'Across (the road)',
-      },
-      {
-        id: 2,
-        img: '/assets/img/expressingMovement/along.jpg',
-        titulo: 'Along (the street)',
-      },
-      {
-        id: 3,
-        img: '/assets/img/expressingMovement/down.jpg',
-        titulo: 'Down (the steps)',
-      },
-      {
-        id: 4,
-        img: '/assets/img/expressingMovement/into.jfif',
-        titulo: 'Into (the shop)',
-      },
-      {
-        id: 5,
-        img: '/assets/img/expressingMovement/outOF.jpg',
-        titulo: 'Out of (the shop)',
-      },
-      {
-        id: 6,
-        img: '/assets/img/expressingMovement/over.jpg',
-        titulo: 'Over (the bridge)',
-      },
-      {
-        id: 7,
-        img: '/assets/img/expressingMovement/past.jpg',
-        titulo: 'Past (the church)',
-      },
-      {
-        id: 8,
-        img: '/assets/img/expressingMovement/round.png',
-        titulo: 'Round / Around',
-      },
-      {
-        id: 9,
-        img: '/assets/img/expressingMovement/through.jpg',
-        titulo: 'Through (the tunnel)',
-      },
-      {
-        id: 10,
-        img: '/assets/img/expressingMovement/towards.jpg',
-        titulo: 'Towards (the lake)',
-      },
-      {
-        id: 11,
-        img: '/assets/img/expressingMovement/under.jpg',
-        titulo: 'Under (the bridge)',
-      },
-      {
-        id: 12,
-        img: '/assets/img/expressingMovement/up.jfif',
-        titulo: 'Up (the steps)',
-      }
-    ]
+  constructor(private tts: TextToSpeech) { }
+
+  acrossToSpeech(text) {
+    this.tts.speak({
+      text: "Across (the road)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  alongToSpeech(text) {
+    this.tts.speak({
+      text: "Along (the street)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  downToSpeech(text) {
+    this.tts.speak({
+      text: "Down (the steps)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  inttoToSpeech(text) {
+    this.tts.speak({
+      text: "Into (the shop)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  outToSpeech(text) {
+    this.tts.speak({
+      text: "Out of (the shop)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  overToSpeech(text) {
+    this.tts.speak({
+      text: "Over (the bridge)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  pastToSpeech(text) {
+    this.tts.speak({
+      text: "Past (the church)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  roundToSpeech(text) {
+    this.tts.speak({
+      text: "Round / Around",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  throughToSpeech(text) {
+    this.tts.speak({
+      text: "Through (the tunnel)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  towardsToSpeech(text) {
+    this.tts.speak({
+      text: "Towards (the lake)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  underToSpeech(text) {
+    this.tts.speak({
+      text: "Under (the bridge)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  upToSpeech(text) {
+    this.tts.speak({
+      text: "Up (the steps)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
   }
 
   ngOnInit() {

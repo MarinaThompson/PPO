@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 
 @Component({
   selector: 'app-housework',
@@ -19,69 +20,126 @@ export class HouseworkPage implements OnInit {
     }
   };
 
-  constructor() {
-    this.slides = [
-      {
-        id: 1,
-        img: '/assets/img/housework/cleanFloor.jfif',
-        titulo: 'Clean the floor',
-      },
-      {
-        id: 2,
-        img: '/assets/img/housework/doIroning.jfif',
-        titulo: 'Do the ironing',
-      },
-      {
-        id: 3,
-        img: '/assets/img/housework/doShopping.jfif',
-        titulo: 'Do the shopping',
-      },
-      {
-        id: 4,
-        img: '/assets/img/housework/doWashing.jfif',
-        titulo: 'Do the washing',
-      },
-      {
-        id: 5,
-        img: '/assets/img/housework/doWashingup.png',
-        titulo: 'Do the washing up',
-      },
-      {
-        id: 6,
-        img: '/assets/img/housework/layTable.jfif',
-        titulo: 'Lay the table <br> (opposite clear)',
-      },
-      {
-        id: 7,
-        img: '/assets/img/housework/makeBeds.jfif',
-        titulo: 'Make the beds',
-      },
-      {
-        id: 8,
-        img: '/assets/img/housework/makeLunch.jfif',
-        titulo: 'Make lunch',
-      },
-      {
-        id: 9,
-        img: '/assets/img/housework/pickupClothes.jfif',
-        titulo: 'Pick up dirty clothes <br> (from the floor)',
-      },
-      {
-        id: 10,
-        img: '/assets/img/housework/putawayClothes.png',
-        titulo: 'Put away your clothes',
-      },
-      {
-        id: 11,
-        img: '/assets/img/housework/takeoutRubbish.jfif',
-        titulo: 'Take out the rubbish',
-      },
-      {
-        id: 12,
-        img: '/assets/img/housework/tidyRoom.jpg',
-        titulo: 'Tidy your room',
-      }
-    ]
+  constructor(private tts: TextToSpeech) { }
+
+  floorToSpeech(text) {
+    this.tts.speak({
+      text: "Clean the floor",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  ironingToSpeech(text) {
+    this.tts.speak({
+      text: "Do the ironing",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  shoppingToSpeech(text) {
+    this.tts.speak({
+      text: "Do the shopping",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  washingToSpeech(text) {
+    this.tts.speak({
+      text: "Do the washing",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  washingupToSpeech(text) {
+    this.tts.speak({
+      text: "Do the washing up",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  tableToSpeech(text) {
+    this.tts.speak({
+      text: "Lay the table (opposite clear)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  bedsToSpeech(text) {
+    this.tts.speak({
+      text: "Make the beds",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  lunchToSpeech(text) {
+    this.tts.speak({
+      text: "Make lunch",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  clothesToSpeech(text) {
+    this.tts.speak({
+      text: "Pick up dirty clothes (from the floor)",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  clothesawayToSpeech(text) {
+    this.tts.speak({
+      text: "Put away your clothes",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  rubbishToSpeech(text) {
+    this.tts.speak({
+      text: "Take out the rubbish",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  tidyroomToSpeech(text) {
+    this.tts.speak({
+      text: "Tidy your room",
+      locale: 'en-US',
+      rate: 0.60
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
   }
 
   ngOnInit() {

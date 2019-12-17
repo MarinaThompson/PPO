@@ -12,16 +12,150 @@
     <ion-card>
         <ion-slides pager="true" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/cleanFloor.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Clean the floor</h4> <br>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
+                    <ion-button (click)="floorToSpeech(text)">Listen</ion-button>
                 </div>
-
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/doIroning.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Do the ironing</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="ironingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/doShopping.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Do the shopping</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="shoppingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/doWashing.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Do the washing</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="washingToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/doWashingup.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Do the washing up</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="washingupToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/layTable.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Lay the table <br> (opposite clear)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tableToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/makeBeds.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Make the beds</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bedsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/makeLunch.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Make lunch</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="lunchToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/pickupClothes.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Pick up dirty clothes <br> (from the floor)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="clothesToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/putawayClothes.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Put away your clothes</h4>
+                </div>
+                <div>
+                    <ion-button (click)="clothesawayToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/takeoutRubbish.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Take out the rubbish</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="rubbishToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/housework/tidyRoom.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tidy your room</h4>
+                </div>
+                <div>
+                    <ion-button (click)="tidyroomToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
         </ion-slides>
     </ion-card>
 

@@ -1,0 +1,116 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-list"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Personality</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Friendly</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who is open and warm</h6>
+            <ion-button fill="outline" (click)="friendlyToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: unfriendly</h6>
+            <ion-button fill="outline" (click)="unfriendlyToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Talkative</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who talks a lot</h6>
+            <ion-button fill="outline" (click)="talkativeToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: quite</h6>
+            <ion-button fill="outline" (click)="quiteToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Generous</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who likes giving people things</h6>
+            <ion-button fill="outline" (click)="generousToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: mean</h6>
+            <ion-button fill="outline" (click)="meanToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Kind</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who is friendly and good to other people</h6>
+            <ion-button fill="outline" (click)="kindToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: unkind</h6>
+            <ion-button fill="outline" (click)="unkindToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Lazy</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who doesn't want to work</h6>
+            <ion-button fill="outline" (click)="lazyToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: hard-working</h6>
+            <ion-button fill="outline" (click)="hardToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Funny</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who makes people laught</h6>
+            <ion-button fill="outline" (click)="funnyToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: serious</h6>
+            <ion-button fill="outline" (click)="seriousToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Clever</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who is quick at learning and understanding things</h6>
+            <ion-button fill="outline" (click)="cleverToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: stupid</h6>
+            <ion-button fill="outline" (click)="stupidToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Shy</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person who can't talk easily to people he / she doesn't know</h6>
+            <ion-button fill="outline" (click)="shyToSpeech(text)">Listen</ion-button>
+            <h6>The opposite: extrovert</h6>
+            <ion-button fill="outline" (click)="extrovertToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+</ion-content>

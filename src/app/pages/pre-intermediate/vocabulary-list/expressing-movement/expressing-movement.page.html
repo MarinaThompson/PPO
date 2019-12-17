@@ -10,21 +10,159 @@
 <ion-content>
 
     <ion-card>
-        <ion-slides pager="true" [options]="slideOptsOne">
+        <ion-slides pager="false" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/across.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Across (the road)</h4> <br>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
+                    <ion-button (click)="acrossToSpeech(text)">Listen</ion-button>
                 </div>
-
             </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/along.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Along (the street)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="alongToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/down.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Down (the steps)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="downToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/into.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Into (the shop)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="inttoToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/outOF.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Out of (the shop)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="outToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/over.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Over (the bridge)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="overToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/past.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Past (the church)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pastToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/round.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Round / Around</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="roundToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/through.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Through (the tunnel)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="throughToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/towards.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Towards (the lake)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="towardsToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/under.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Under (the bridge)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="underToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/expressingMovement/up.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Up (the steps)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="upToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+
         </ion-slides>
     </ion-card>
-
-    <footer>
-    </footer>
 </ion-content>

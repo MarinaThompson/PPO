@@ -1,0 +1,112 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-list"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Appearance</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/bald.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>He's bald</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="baldToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/beard.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>He has a beard and a moustache</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="beardToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/blue.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>She has big blue eyes</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="blueToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/curly.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>She has curly red hair</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="curlyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/overweight.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>He is a bit overweight</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="overweightToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/straight.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>She has long straight hair</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="longToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/tall.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>He's very tall and thin</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tallToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/appearance/wavy.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>She has dark wavy hair</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="wavyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+        </ion-slides>
+    </ion-card>
+</ion-content>

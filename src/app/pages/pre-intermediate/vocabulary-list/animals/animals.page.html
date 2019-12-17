@@ -10,17 +10,366 @@
 <ion-content>
 
     <ion-card>
-        <ion-slides pager="true" [options]="slideOptsOne">
+        <ion-slides pager="false" [options]="slideOptsOne">
 
-            <ion-slide *ngFor="let slide of slides">
-
-                <div class="slide-img-padding">
-                    <img [src]="slide.img">
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/bat.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bat</h4> <br>
                 </div>
                 <div>
-                    <h3 [innerHTML]="slide.titulo"></h3>
+                    <ion-button (click)="batToSpeech(text)">Listen</ion-button>
                 </div>
+            </ion-slide>
 
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/bear.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bear</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bearToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/bee.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bee</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="beeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/bird.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bird</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="birdToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/bull.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Bull</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="bullToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/butterfly.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Butterfly</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="butterflyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/camel.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Camel</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="camelToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/chicken.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Chicken</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="chickenToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/cow.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Cow</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="cowToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/crocodile.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Crocodile</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="crocodileToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/dolphin.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Dolphin</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="dolphinToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/elephant.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Elephant</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="elephantToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/fly.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Fly</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="flyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/giraffe.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Giraffe</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="giraffeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/goat.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Goat</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="goatToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/horse.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Horse</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="horseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/jellyfish.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Jellyfish</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="jellyfishToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/kangaroo.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Kangaroo</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="kangarooToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/lion.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Lion</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="lionToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/monkeu.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Monkey</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="monkeyToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/mosquito.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Mosquito</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mosquitoToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/mouse.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Mouse <br> (plural mice)</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="mouseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/pig.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Pig</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="pigToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/rabbit.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Rabbit</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="rabbitToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/shark.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Shark</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sharkToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/sheep.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sheep</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sheepToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/snake.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Snake</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="snakeToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/spider.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Spider</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="spiderToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/tiger.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tiger</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tigerToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/animal/whale.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Whale</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="whaleToSpeech(text)">Listen</ion-button>
+                </div>
             </ion-slide>
         </ion-slides>
     </ion-card>

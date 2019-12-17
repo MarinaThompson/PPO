@@ -1,0 +1,154 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-list"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Confusing verbs</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Wear and Carry:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Wear</strong>: jewellery, clothes</h6>
+            <ion-button fill="outline" (click)="wearToSpeech(text)">Listen</ion-button>
+            <h6><strong>Carry</strong>: a bag, a baby</h6>
+            <ion-button fill="outline" (click)="carryToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Win and Earn:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Win</strong>: a medal, a prize, a match</h6>
+            <ion-button fill="outline" (click)="winToSpeech(text)">Listen</ion-button>
+            <h6><strong>Earn</strong>: a salary, money</h6>
+            <ion-button fill="outline" (click)="earnToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Know and Meet:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Know</strong>: somebody well, something</h6>
+            <ion-button fill="outline" (click)="knowToSpeech(text)">Listen</ion-button>
+            <h6><strong>Meet</strong>: somebody for the first time, at 11 o'clock</h6>
+            <ion-button fill="outline" (click)="meetToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Hope and Wait:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Hope</strong>: that something good will happen</h6>
+            <ion-button fill="outline" (click)="hopeToSpeech(text)">Listen</ion-button>
+            <h6><strong>Wait</strong>: for a bus, for a long time</h6>
+            <ion-button fill="outline" (click)="waitToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Watch and Look at:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Watch</strong>: TV, a match</h6>
+            <ion-button fill="outline" (click)="watchToSpeech(text)">Listen</ion-button>
+            <h6><strong>Look at</strong>: a photo, your watch</h6>
+            <ion-button fill="outline" (click)="lookatToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Look and Look like:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Look</strong>: happy, about 25 years old</h6>
+            <ion-button fill="outline" (click)="lookToSpeech(text)">Listen</ion-button>
+            <h6><strong>Look like</strong>: your mother, a model</h6>
+            <ion-button fill="outline" (click)="looklikeToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Miss and Lose:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Miss</strong>: the bus, the class</h6>
+            <ion-button fill="outline" (click)="missToSpeech(text)">Listen</ion-button>
+            <h6><strong>Lose</strong>: a match, your glasses</h6>
+            <ion-button fill="outline" (click)="loseToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Bring and Take:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Bring</strong>: your dictionary</h6>
+            <ion-button fill="outline" (click)="bringToSpeech(text)">Listen</ion-button>
+            <h6><strong>Take</strong>: a umbrella, your children to school</h6>
+            <ion-button fill="outline" (click)="takeToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Look for and Find:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Look for</strong>: your glasses, a job</h6>
+            <ion-button fill="outline" (click)="lookforToSpeech(text)">Listen</ion-button>
+            <h6><strong>Find</strong>: your glasses, a job</h6>
+            <ion-button fill="outline" (click)="findToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Say for and Tell:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Say</strong>: sorry, hello, something to sb</h6>
+            <ion-button fill="outline" (click)="sayToSpeech(text)">Listen</ion-button>
+            <h6><strong>Tell</strong>: a joke, a lie, somebody something</h6>
+            <ion-button fill="outline" (click)="tellToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Lend for and Borrow:</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6><strong>Lend</strong>: money to sb</h6>
+            <ion-button fill="outline" (click)="lendToSpeech(text)">Listen</ion-button>
+            <h6><strong>Borrow</strong>: money from sb</h6>
+            <ion-button fill="outline" (click)="borrowToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+</ion-content>
