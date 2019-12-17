@@ -151,6 +151,8 @@ const routes: Routes = [
   { path: 'vocabulary-intermediate', loadChildren: './pages/intermediate/vocabulary-intermediate/vocabulary-intermediate.module#VocabularyIntermediatePageModule' },
   { path: 'food1', loadChildren: './pages/intermediate/vocabulary-intermediate/food1/food1.module#Food1PageModule' },
   { path: 'the-body', loadChildren: './pages/intermediate/vocabulary-intermediate/the-body/the-body.module#TheBodyPageModule' },
+  { path: 'relationship', loadChildren: './pages/intermediate/vocabulary-intermediate/relationship/relationship.module#RelationshipPageModule' },
+  { path: 'cinema', loadChildren: './pages/intermediate/vocabulary-intermediate/cinema/cinema.module#CinemaPageModule' },
 
 
 

@@ -1,0 +1,102 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-intermediate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Relationship</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Couple</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>Two people who are married or in a romantic relationship</h6>
+            <ion-button fill="outline" (click)="coupleToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Partner</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>Your husband, wife, boyfriend, or girlfriend</h6>
+            <ion-button fill="outline" (click)="partnerToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Fiancé</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The person that you are engaged to be married to</h6>
+            <ion-button fill="outline" (click)="fianceToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Flatmate</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person that you share a flat with</h6>
+            <ion-button fill="outline" (click)="flatmateToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Colleague</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person that you work with</h6>
+            <ion-button fill="outline" (click)="colleagueToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Ex</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>(colloquial) a person that you used to have a relationship</h6>
+            <ion-button fill="outline" (click)="exToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Close friend</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A very good friend that you can talk to about anything</h6>
+            <ion-button fill="outline" (click)="closeToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Classmate</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A friend from school or college</h6>
+            <ion-button fill="outline" (click)="classmateToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+
+</ion-content>

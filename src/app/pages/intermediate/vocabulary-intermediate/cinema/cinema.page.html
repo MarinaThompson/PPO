@@ -1,0 +1,146 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-intermediate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Cinema</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Cast</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>All the people who act in a film</h6>
+            <ion-button fill="outline" (click)="castToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Star</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>(also verb) the most important actor or actress in a film</h6>
+            <ion-button fill="outline" (click)="starToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Soundtrack</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The music of a film</h6>
+            <ion-button fill="outline" (click)="soundtrackToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Plot</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The story of a film</h6>
+            <ion-button fill="outline" (click)="plotToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Scene</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A part of a film happening in one place</h6>
+            <ion-button fill="outline" (click)="sceneToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Audience</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The people who watch a film in a cinema</h6>
+            <ion-button fill="outline" (click)="audienceToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Sequel</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A film which continues the story of an earlier film</h6>
+            <ion-button fill="outline" (click)="sequelToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Special effects</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>Images often created by a computer</h6>
+            <ion-button fill="outline" (click)="specialToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Subtitles</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The translation of the dialog into another language</h6>
+            <ion-button fill="outline" (click)="subtitlesToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Scipt</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The words of a film</h6>
+            <ion-button fill="outline" (click)="scriptToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Extra</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A person in a film who has a small unimportant part, e.g. in a crowd scene</h6>
+            <ion-button fill="outline" (click)="extraToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Review</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>An article which gives an opinion on a new film, book, etc.</h6>
+            <ion-button fill="outline" (click)="reviewToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+
+</ion-content>
