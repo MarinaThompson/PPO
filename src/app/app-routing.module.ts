@@ -178,6 +178,7 @@ const routes: Routes = [
   { path: 'test-upper', loadChildren: './pages/upper-intermediate/test-upper/test-upper.module#TestUpperPageModule' },
   { path: 'teste6', loadChildren: './pages/intermediate/tests-intermediate/teste6/teste6.module#Teste6PageModule' },
   { path: 'testslis-intermediate', loadChildren: './pages/intermediate/tests-intermediate/testslis-intermediate/testslis-intermediate.module#TestslisIntermediatePageModule' },
+  { path: 'testvoc5', loadChildren: './pages/intermediate/tests-intermediate/testvoc5/testvoc5.module#Testvoc5PageModule' },
 
 
 

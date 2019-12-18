@@ -1,0 +1,115 @@
+<ion-app>
+    <ion-header translucent>
+        <ion-toolbar>
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="tests-intermediate"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Teste vocabulário</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content class="swiper-no-swiping">
+        <ion-slides>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/food1/lemon.jpg">
+                    <h6>What is the name of this food?</h6>
+
+                    <div>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label></ion-label>
+                                <ion-input type="text" text-left id="input" [(ngModel)]="resposta1" placeholder="digite a resposta aqui"></ion-input>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="primary" (click)="question1()">Check</ion-button>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/body1/fist.png">
+                    <h6>What is the name of this body part?</h6>
+
+                    <div>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label></ion-label>
+                                <ion-input type="text" text-left id="input" [(ngModel)]="resposta2" placeholder="digite a resposta aqui"></ion-input>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="primary" (click)="question2()">Check</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+
+                    <h6>What's the person who gets angry quicky and likes fighting and arguing?</h6>
+
+                    <div>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label></ion-label>
+                                <ion-input type="text" text-left id="input" [(ngModel)]="resposta3" placeholder="digite a resposta aqui"></ion-input>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="primary" (click)="question3()">Check</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+
+                    <h6>What's the person who is the most important actor or actress in a film?</h6>
+
+                    <div>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label></ion-label>
+                                <ion-input type="text" text-left id="input" [(ngModel)]="resposta4" placeholder="digite a resposta aqui"></ion-input>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="primary" (click)="question4()">Check</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="slide-inner ion-padding">
+
+                    <img src="/assets/img/body1/palm.jpg">
+                    <h6>What is the name of this body part?</h6>
+
+                    <div>
+                        <ion-list>
+                            <ion-item>
+                                <ion-label></ion-label>
+                                <ion-input type="text" text-left id="input" [(ngModel)]="resposta5" placeholder="digite a resposta aqui"></ion-input>
+                            </ion-item>
+                        </ion-list>
+
+                        <ion-button color="primary" (click)="question5()" (click)="showResult()">Check</ion-button>
+                    </div>
+                </div>
+            </ion-slide>
+
+
+
+
+        </ion-slides>
+    </ion-content>
+</ion-app>
