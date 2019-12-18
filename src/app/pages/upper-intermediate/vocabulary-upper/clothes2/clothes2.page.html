@@ -1,0 +1,139 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-upper"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Clothes</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-slides pager="false" [options]="slideOptsOne">
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/checked.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Ckecked</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="checkedToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/hooded.jfif" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Hooded</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="hoodedToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/longSleeve.heic" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Long sleeve</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="longToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/loose.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Loose</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="looseToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/patterned.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Patterned</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="patternedToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/plain.png" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Plain</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="plainToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/sleeveless.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Sleeveless</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="sleeveToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/striped.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Striped</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="stripedToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/tight.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>Tight</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="tightToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+
+            <ion-slide>
+                <div class="img">
+                    <img src="/assets/img/clothes/v-neck.jpg" alt="">
+                </div>
+                <div class="titulo">
+                    <h4>V-neck</h4> <br>
+                </div>
+                <div>
+                    <ion-button (click)="neckToSpeech(text)">Listen</ion-button>
+                </div>
+            </ion-slide>
+        </ion-slides>
+    </ion-card>
+
+    <footer>
+    </footer>
+</ion-content>

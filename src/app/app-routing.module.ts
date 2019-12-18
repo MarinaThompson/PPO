@@ -130,7 +130,8 @@ const routes: Routes = [
   { path: 'listening-intermediate', loadChildren: './pages/intermediate/listening-intermediate/listening-intermediate.module#ListeningIntermediatePageModule' },
   { path: 'listening-upper-intermediate', loadChildren: './pages/upper-intermediate/listening-upper-intermediate/listening-upper-intermediate.module#ListeningUpperIntermediatePageModule' },
   { path: 'language-popover', loadChildren: './pages/language-popover/language-popover.module#LanguagePopoverPageModule' },
-  { path: 'test-traducao', loadChildren: './pages/test-traducao/test-traducao.module#TestTraducaoPageModule' },  { path: 'places', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/places/places.module#PlacesPageModule' },
+  { path: 'test-traducao', loadChildren: './pages/test-traducao/test-traducao.module#TestTraducaoPageModule' },
+  { path: 'places', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/places/places.module#PlacesPageModule' },
   { path: 'house', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/house/house.module#HousePageModule' },
   { path: 'family', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/family/family.module#FamilyPageModule' },
   { path: 'weather', loadChildren: './pages/beginner/topics-vocabulary1/topicsVocabulary1/weather/weather.module#WeatherPageModule' },
@@ -155,6 +156,10 @@ const routes: Routes = [
   { path: 'cinema', loadChildren: './pages/intermediate/vocabulary-intermediate/cinema/cinema.module#CinemaPageModule' },
   { path: 'personality1', loadChildren: './pages/intermediate/vocabulary-intermediate/personality1/personality1.module#Personality1PageModule' },
   { path: 'transport', loadChildren: './pages/intermediate/vocabulary-intermediate/transport/transport.module#TransportPageModule' },
+  { path: 'tests-intermediate', loadChildren: './pages/intermediate/tests-intermediate/tests-intermediate.module#TestsIntermediatePageModule' },
+  { path: 'teste5', loadChildren: './pages/intermediate/tests-intermediate/teste5/teste5.module#Teste5PageModule' },
+  { path: 'vocabulary-upper', loadChildren: './pages/upper-intermediate/vocabulary-upper/vocabulary-upper.module#VocabularyUpperPageModule' },  { path: 'clothes2', loadChildren: './pages/upper-intermediate/vocabulary-upper/clothes2/clothes2.module#Clothes2PageModule' },
+
 
 
 

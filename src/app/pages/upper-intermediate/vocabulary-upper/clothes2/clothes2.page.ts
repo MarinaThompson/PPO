@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { TextToSpeech } from '@ionic-native/text-to-speech/ngx';
 
 @Component({
-  selector: 'app-transport',
-  templateUrl: './transport.page.html',
-  styleUrls: ['./transport.page.scss'],
+  selector: 'app-clothes2',
+  templateUrl: './clothes2.page.html',
+  styleUrls: ['./clothes2.page.scss'],
 })
-export class TransportPage implements OnInit {
+export class Clothes2Page implements OnInit {
 
   slides: any;
 
@@ -22,9 +22,9 @@ export class TransportPage implements OnInit {
 
   constructor(private tts: TextToSpeech) { }
 
-  carriageToSpeech(text) {
+  checkedToSpeech(text) {
     this.tts.speak({
-      text: "Carriage",
+      text: "Ckecked",
       locale: 'en-US',
       rate: 0.90
     })
@@ -32,9 +32,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  coachToSpeech(text) {
+  hoodedToSpeech(text) {
     this.tts.speak({
-      text: "Coach",
+      text: "Hooded",
       locale: 'en-US',
       rate: 0.90
     })
@@ -42,9 +42,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  lorryToSpeech(text) {
+  longToSpeech(text) {
     this.tts.speak({
-      text: "Lorry",
+      text: "Long sleeve",
       locale: 'en-US',
       rate: 0.90
     })
@@ -52,9 +52,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  motorToSpeech(text) {
+  looseToSpeech(text) {
     this.tts.speak({
-      text: "Motor way",
+      text: "Loose",
       locale: 'en-US',
       rate: 0.90
     })
@@ -62,9 +62,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  platformToSpeech(text) {
+  patternedToSpeech(text) {
     this.tts.speak({
-      text: "Platform",
+      text: "Patterned",
       locale: 'en-US',
       rate: 0.90
     })
@@ -72,9 +72,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  scooterToSpeech(text) {
+  plainToSpeech(text) {
     this.tts.speak({
-      text: "Scooter",
+      text: "Plain",
       locale: 'en-US',
       rate: 0.90
     })
@@ -82,9 +82,9 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  tramToSpeech(text) {
+  sleeveToSpeech(text) {
     this.tts.speak({
-      text: "Tram",
+      text: "Sleeveless",
       locale: 'en-US',
       rate: 0.90
     })
@@ -92,9 +92,29 @@ export class TransportPage implements OnInit {
       .catch((reason: any) => console.log(reason));
   }
 
-  vanToSpeech(text) {
+  stripedToSpeech(text) {
     this.tts.speak({
-      text: "Van",
+      text: "Striped",
+      locale: 'en-US',
+      rate: 0.90
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  tightToSpeech(text) {
+    this.tts.speak({
+      text: "Tight",
+      locale: 'en-US',
+      rate: 0.90
+    })
+      .then(() => console.log('Success'))
+      .catch((reason: any) => console.log(reason));
+  }
+
+  neckToSpeech(text) {
+    this.tts.speak({
+      text: "V-neck",
       locale: 'en-US',
       rate: 0.90
     })
