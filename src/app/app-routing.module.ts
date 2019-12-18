@@ -163,6 +163,14 @@ const routes: Routes = [
   { path: 'feelings', loadChildren: './pages/upper-intermediate/vocabulary-upper/feelings/feelings.module#FeelingsPageModule' },
   { path: 'extreme-weather', loadChildren: './pages/upper-intermediate/vocabulary-upper/extreme-weather/extreme-weather.module#ExtremeWeatherPageModule' },
   { path: 'illnesses', loadChildren: './pages/upper-intermediate/vocabulary-upper/illnesses/illnesses.module#IllnessesPageModule' },
+  { path: 'grammar-upper', loadChildren: './pages/upper-intermediate/grammar-upper/grammar-upper.module#GrammarUpperPageModule' },
+  { path: 'pp-continuous', loadChildren: './pages/upper-intermediate/grammar-upper/pp-continuous/pp-continuous.module#PpContinuousPageModule' },
+  { path: 'adjective-order', loadChildren: './pages/upper-intermediate/grammar-upper/adjective-order/adjective-order.module#AdjectiveOrderPageModule' },
+  { path: 'narrative-tenses', loadChildren: './pages/upper-intermediate/grammar-upper/narrative-tenses/narrative-tenses.module#NarrativeTensesPageModule' },
+  { path: 'future-perfect', loadChildren: './pages/upper-intermediate/grammar-upper/future-perfect/future-perfect.module#FuturePerfectPageModule' },
+  { path: 'structures-wish', loadChildren: './pages/upper-intermediate/grammar-upper/structures-wish/structures-wish.module#StructuresWishPageModule' },
+  { path: 'be-usedto', loadChildren: './pages/upper-intermediate/grammar-upper/be-usedto/be-usedto.module#BeUsedtoPageModule' },
+  { path: 'senses', loadChildren: './pages/upper-intermediate/grammar-upper/senses/senses.module#SensesPageModule' },
 
 
 
