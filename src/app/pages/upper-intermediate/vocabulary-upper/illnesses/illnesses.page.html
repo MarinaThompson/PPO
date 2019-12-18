@@ -1,0 +1,113 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-upper"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Illnesses</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He has <strong>a sore throat</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>It hurts when he talks or swallows food</h6>
+            <ion-button fill="outline" (click)="throatToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He has <strong>diarrhoea</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He's been to the toilet five times this morning</h6>
+            <ion-button fill="outline" (click)="diarrhoeaToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He <strong>feels sick</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He feels that he's going to vomit</h6>
+            <ion-button fill="outline" (click)="sickToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He's <strong>fainted</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>It's so hot in the room that he's lost consciousness</h6>
+            <ion-button fill="outline" (click)="faintedToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He has a <strong>blister</strong> on his foot</ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He's been walking in uncomfortable shoes</h6>
+            <ion-button fill="outline" (click)="blisterToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He has a <strong>cold</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He's sneezing a lot and he has a cough</h6>
+            <ion-button fill="outline" (click)="coldToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He has <strong>flu</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He has a temperature and he aches all over</h6>
+            <ion-button fill="outline" (click)="fluToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He feels <strong>dizzy</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He feels that everything is spinning round</h6>
+            <ion-button fill="outline" (click)="dizzyToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>He's <strong>cut himself</strong></ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>He's bleeding</h6>
+            <ion-button fill="outline" (click)="cutToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+
+
+</ion-content>

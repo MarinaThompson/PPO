@@ -1,0 +1,120 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="vocabulary-upper"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Extreme weather</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Heatwave
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A period of unusually hot weather </h6>
+            <ion-button fill="outline" (click)="heatwaveToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Drought
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A long, usually hot, dry period when there is a little or no rain</h6>
+            <ion-button fill="outline" (click)="droughtToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Hail
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>Small balls of ice that fall like rain</h6>
+            <ion-button fill="outline" (click)="hailToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Lightning
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A flash of very bright light in the sky caused by electricity</h6>
+            <ion-button fill="outline" (click)="lightningToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Thunder
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The loud noise that you hear during a storm</h6>
+            <ion-button fill="outline" (click)="thunderToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Blizzard
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A snow storm with very strong windy</h6>
+            <ion-button fill="outline" (click)="blizzardToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Flood
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>When everything becomes covered with water</h6>
+            <ion-button fill="outline" (click)="floodToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Hurricane
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>A violent storm with very strong winds (also cyclone, tornado)</h6>
+            <ion-button fill="outline" (click)="hurricaneToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Monsoon
+            </ion-card-title>
+        </ion-card-header>
+
+        <div>
+            <h6>The season when it rains a lot in southern Asia</h6>
+            <ion-button fill="outline" (click)="monsoonToSpeech(text)">Listen</ion-button>
+        </div>
+    </ion-card>
+
+</ion-content>

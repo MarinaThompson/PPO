@@ -159,6 +159,10 @@ const routes: Routes = [
   { path: 'tests-intermediate', loadChildren: './pages/intermediate/tests-intermediate/tests-intermediate.module#TestsIntermediatePageModule' },
   { path: 'teste5', loadChildren: './pages/intermediate/tests-intermediate/teste5/teste5.module#Teste5PageModule' },
   { path: 'vocabulary-upper', loadChildren: './pages/upper-intermediate/vocabulary-upper/vocabulary-upper.module#VocabularyUpperPageModule' },  { path: 'clothes2', loadChildren: './pages/upper-intermediate/vocabulary-upper/clothes2/clothes2.module#Clothes2PageModule' },
+  { path: 'body2', loadChildren: './pages/upper-intermediate/vocabulary-upper/body2/body2.module#Body2PageModule' },
+  { path: 'feelings', loadChildren: './pages/upper-intermediate/vocabulary-upper/feelings/feelings.module#FeelingsPageModule' },
+  { path: 'extreme-weather', loadChildren: './pages/upper-intermediate/vocabulary-upper/extreme-weather/extreme-weather.module#ExtremeWeatherPageModule' },
+  { path: 'illnesses', loadChildren: './pages/upper-intermediate/vocabulary-upper/illnesses/illnesses.module#IllnessesPageModule' },
 
 
 
