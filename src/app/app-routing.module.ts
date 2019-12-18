@@ -171,6 +171,10 @@ const routes: Routes = [
   { path: 'structures-wish', loadChildren: './pages/upper-intermediate/grammar-upper/structures-wish/structures-wish.module#StructuresWishPageModule' },
   { path: 'be-usedto', loadChildren: './pages/upper-intermediate/grammar-upper/be-usedto/be-usedto.module#BeUsedtoPageModule' },
   { path: 'senses', loadChildren: './pages/upper-intermediate/grammar-upper/senses/senses.module#SensesPageModule' },
+  { path: 'possibility', loadChildren: './pages/intermediate/grammar-list1/possibility/possibility.module#PossibilityPageModule' },
+  { path: 'passive-the', loadChildren: './pages/intermediate/grammar-list1/passive-the/passive-the.module#PassiveThePageModule' },
+  { path: 'conditional1', loadChildren: './pages/intermediate/grammar-list1/conditional1/conditional1.module#Conditional1PageModule' },
+  { path: 'third-conditional', loadChildren: './pages/intermediate/grammar-list1/third-conditional/third-conditional.module#ThirdConditionalPageModule' },
 
 
 
