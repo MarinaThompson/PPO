@@ -1,0 +1,131 @@
+<ion-header translucent>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="tests-intermediate"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Test listening</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="swiper-no-swiping">
+
+    <ion-slides>
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and type what you hear</h5>
+                    <button ion-button (click)="listenToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label></ion-label>
+                            <ion-input type="text" text-left id="input" [(ngModel)]="resposta1" placeholder="digite a resposta aqui"></ion-input>
+                        </ion-item>
+                    </ion-list>
+
+                    <ion-button color="primary" (click)="question1()">Check</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and type what you hear</h5>
+                    <button ion-button (click)="listen1ToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label></ion-label>
+                            <ion-input type="text" text-left id="input" [(ngModel)]="resposta2" placeholder="digite a resposta aqui"></ion-input>
+                        </ion-item>
+                    </ion-list>
+
+                    <ion-button color="primary" (click)="question2()">Check</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and type what you hear</h5>
+                    <button ion-button (click)="listen2ToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label></ion-label>
+                            <ion-input type="text" text-left id="input" [(ngModel)]="resposta3" placeholder="digite a resposta aqui"></ion-input>
+                        </ion-item>
+                    </ion-list>
+
+                    <ion-button color="primary" (click)="question3()">Check</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and type what you hear</h5>
+                    <button ion-button (click)="listen3ToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label></ion-label>
+                            <ion-input type="text" text-left id="input" [(ngModel)]="resposta4" placeholder="digite a resposta aqui"></ion-input>
+                        </ion-item>
+                    </ion-list>
+
+                    <ion-button color="primary" (click)="question4()">Check</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+        <ion-slide>
+            <div class="slide-inner ion-padding">
+
+                <div>
+                    <h5>Click the button to listen and type what you hear</h5>
+                    <button ion-button (click)="listen4ToSpeech(text)">Listen</button>
+                </div>
+                <br>
+                <br>
+
+                <div>
+                    <ion-list>
+                        <ion-item>
+                            <ion-label></ion-label>
+                            <ion-input type="text" text-left id="input" [(ngModel)]="resposta5" placeholder="digite a resposta aqui"></ion-input>
+                        </ion-item>
+                    </ion-list>
+
+                    <ion-button color="primary" (click)="question5()">Check</ion-button>
+                </div>
+            </div>
+        </ion-slide>
+
+
+    </ion-slides>
+
+</ion-content>

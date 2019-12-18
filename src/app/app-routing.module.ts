@@ -175,6 +175,9 @@ const routes: Routes = [
   { path: 'passive-the', loadChildren: './pages/intermediate/grammar-list1/passive-the/passive-the.module#PassiveThePageModule' },
   { path: 'conditional1', loadChildren: './pages/intermediate/grammar-list1/conditional1/conditional1.module#Conditional1PageModule' },
   { path: 'third-conditional', loadChildren: './pages/intermediate/grammar-list1/third-conditional/third-conditional.module#ThirdConditionalPageModule' },
+  { path: 'test-upper', loadChildren: './pages/upper-intermediate/test-upper/test-upper.module#TestUpperPageModule' },
+  { path: 'teste6', loadChildren: './pages/intermediate/tests-intermediate/teste6/teste6.module#Teste6PageModule' },
+  { path: 'testslis-intermediate', loadChildren: './pages/intermediate/tests-intermediate/testslis-intermediate/testslis-intermediate.module#TestslisIntermediatePageModule' },
 
 
 
